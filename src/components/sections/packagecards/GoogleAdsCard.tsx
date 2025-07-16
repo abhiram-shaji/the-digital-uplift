@@ -4,18 +4,20 @@ import { Target, TrendingUp, Clock, Users, BarChart2 } from "lucide-react";
 
 export default function GoogleAdsCard() {
   return (
-    <div className="relative min-h-[420px] rounded-xl overflow-hidden">
-      {/* Full background image */}
-      <Image
-        src="/google-ads-bg.png"
-        alt="Google Ads Background"
-        fill
-        className="object-cover"
-      />
+    <div className="relative rounded-xl border bg-white shadow-md pt-16 pb-4 px-4 text-center">
+      {/* Icon: half outside, centered */}
+      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full bg-white flex items-center justify-center shadow-lg">
+        <Image
+          src="/google-ad-icon.png"
+          alt="Google Ads Icon"
+          width={48}
+          height={48}
+        />
+      </div>
 
-      {/* Frosted content panel at the bottom */}
-      <div className="absolute bottom-0 w-full bg-white/85 backdrop-blur-md z-10 p-4">
-        <CardTitle className="text-base mb-2">
+      {/* Title and content */}
+      <div className="w-full bg-white/85 backdrop-blur-sm rounded-lg p-4 mt-2">
+        <CardTitle className="text-base mb-3">
           Google Ads Campaign Setup – 149 CAD
         </CardTitle>
         <CardContent className="space-y-3 text-muted-foreground text-sm p-0">
