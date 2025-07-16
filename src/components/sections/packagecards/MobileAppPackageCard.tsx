@@ -1,0 +1,59 @@
+import Image from "next/image";
+import { CardTitle, CardContent } from "@/components/ui/card";
+import {
+  Smartphone,
+  Paintbrush2,
+  CalendarCheck2,
+  MessageCircle,
+  Bell,
+  Gift
+} from "lucide-react";
+
+export default function MobileAppPackageCard() {
+  return (
+    <div className="relative min-h-[420px] rounded-xl overflow-hidden">
+      {/* Full background image */}
+      <Image
+        src="/mobile-app-bg.png"
+        alt="Mobile App Background"
+        fill
+        className="object-cover"
+      />
+
+      {/* Frosted text panel at the bottom */}
+      <div className="absolute bottom-0 w-full bg-white/75 backdrop-blur-md z-10 p-4">
+        <CardTitle className="text-base mb-2">
+          Mobile App Package – From 499 CAD
+        </CardTitle>
+        <CardContent className="space-y-4 text-muted-foreground text-sm p-0">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <Smartphone className="w-4 h-4" />
+              <span>Cross-platform (iOS + Android)</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Paintbrush2 className="w-4 h-4" />
+              <span>Branded design to match your website</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CalendarCheck2 className="w-4 h-4" />
+              <span>Appointment bookings</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MessageCircle className="w-4 h-4" />
+              <span>Customer chat</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Bell className="w-4 h-4" />
+              <span>Push notifications</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Gift className="w-4 h-4" />
+              <span>Loyalty or rewards system</span>
+            </div>
+          </div>
+        </CardContent>
+      </div>
+    </div>
+  );
+}
