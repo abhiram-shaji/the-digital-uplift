@@ -1,5 +1,3 @@
-// components/Navbar.tsx
-
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -14,8 +12,11 @@ export default function Navbar() {
           <Link href="#services" className="text-sm hover:underline">
             Services
           </Link>
-          <Link href="#contact" className="text-sm hover:underline">
-            Contact
+          <Link href="#works" className="text-sm hover:underline">
+            Works
+          </Link>
+          <Link href="#about" className="text-sm hover:underline">
+            About
           </Link>
           <Button size="sm" asChild>
             <a href="#book">Book Now</a>
