@@ -64,7 +64,7 @@ export default function PrivacyPolicyModal() {
 
           <h3 className="font-semibold text-base">Your Rights</h3>
           <p>
-            You can request access to, correction of, or deletion of any personal data you've submitted. Just send us an email.
+            You can request access to, correction of, or deletion of any personal data you&apos;ve submitted. Just send us an email.
           </p>
         </div>
       </DialogContent>

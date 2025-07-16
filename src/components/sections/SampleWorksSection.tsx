@@ -1,6 +1,6 @@
 // components/sections/SampleWorksSection.tsx
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { sampleworks } from "@/lib/data/sampleworks";
