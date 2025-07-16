@@ -1,8 +1,10 @@
-// src/app/layout.tsx
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/sections/Hero";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +31,12 @@ export default function RootLayout({
       <body
         className={`min-h-screen bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <Navbar />
+        <Hero />
+        <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {children}
-        </div>
+        </main>
+        <Footer />
       </body>
     </html>
   );
