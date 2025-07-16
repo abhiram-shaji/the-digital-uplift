@@ -29,11 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`min-h-screen bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}
+        className={`min-h-screen flex flex-col bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}
       >
         <Navbar />
         <Hero />
-        <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {children}
         </main>
         <Footer />
@@ -41,3 +41,4 @@ export default function RootLayout({
     </html>
   );
 }
+
