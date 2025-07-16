@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="w-full bg-[#f1f5f9] py-20 text-center px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Professional Website Starting at <span className="text-[#f9bc60]">$149 CAD</span>
+          Build Professional Website Starting at <span className="text-[#f9bc60]">$169 CAD</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-8">
           Limited time launch offer! Book a free appointment now!
