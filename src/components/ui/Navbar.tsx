@@ -1,9 +1,11 @@
+// components/Navbar.tsx
 "use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import clsx from "clsx";
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 
 export default function Navbar() {
   const [hidden, setHidden] = useState(false);
@@ -12,13 +14,11 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setHidden(true); // scrolling down
+        setHidden(true);
       } else {
-        setHidden(false); // scrolling up
+        setHidden(false);
       }
-
       setLastScrollY(currentScrollY);
     };
 
@@ -34,31 +34,14 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo and Brand Name */}
         <Link href="/" className="flex items-center space-x-2">
-          <img
-            src="/logo.png"
-            alt="Logo"
-            className="h-8 w-auto sm:h-10"
-          />
+          <img src="/logo.png" alt="Logo" className="h-8 w-auto sm:h-10" />
           <span className="text-lg font-semibold tracking-tight">
             The Digital Uplift
           </span>
         </Link>
-        <nav className="flex items-center gap-4">
-          <Link href="#services" className="text-sm hover:underline">
-            Services
-          </Link>
-          <Link href="#works" className="text-sm hover:underline">
-            Works
-          </Link>
-          <Link href="#about" className="text-sm hover:underline">
-            About
-          </Link>
-          <Button size="sm" asChild>
-            <a href="#book">Book Now</a>
-          </Button>
-        </nav>
+        <DesktopNav />
+        <MobileNav />
       </div>
     </header>
   );
