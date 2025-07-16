@@ -21,7 +21,7 @@ export default function MobileAppPackageCard() {
       />
 
       {/* Frosted text panel at the bottom */}
-      <div className="absolute bottom-0 w-full bg-white/75 backdrop-blur-md z-10 p-4">
+      <div className="absolute bottom-0 w-full bg-white/85 backdrop-blur-md z-10 p-4">
         <CardTitle className="text-base mb-2">
           Mobile App Package – From 499 CAD
         </CardTitle>

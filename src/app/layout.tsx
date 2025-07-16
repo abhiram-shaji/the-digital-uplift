@@ -33,7 +33,8 @@ export default function RootLayout({
       >
         <Navbar />
         <Hero />
-        <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="flex-1 mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-screen-xl">
+
           {children}
         </main>
         <Footer />

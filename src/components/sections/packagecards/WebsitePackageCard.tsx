@@ -26,7 +26,7 @@ export default function WebsitePackageCard() {
       />
 
       {/* Text panel at the bottom with blur + opacity */}
-      <div className="absolute bottom-0 w-full bg-white/75 backdrop-blur-md z-10 p-4">
+      <div className="absolute bottom-0 w-full bg-white/85 backdrop-blur-md z-10 p-4">
         <CardTitle className="text-base mb-2">
           Website Package – From 169 CAD
         </CardTitle>
