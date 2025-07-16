@@ -12,9 +12,6 @@ export default function SampleWorksSection() {
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight">
             Sample Works
-            <span className="block text-muted-foreground text-lg">
-              Recent projects built by us
-            </span>
           </h2>
         </div>
 
@@ -22,12 +19,12 @@ export default function SampleWorksSection() {
           {sampleworks.map((work, index) => (
             <Card key={index} className="overflow-hidden">
               <Image
-                src={work.logo}
-                alt={work.alt}
-                width={800}
-                height={600}
-                className="w-full h-48 object-cover"
-              />
+  src={work.logo}
+  alt={work.alt}
+  width={800}
+  height={600}
+  className="w-full h-48 object-cover object-top"
+/>
               <CardContent className="p-4 space-y-3">
                 <CardTitle className="text-lg font-semibold">
                   {work.title}
