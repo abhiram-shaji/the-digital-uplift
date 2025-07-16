@@ -39,14 +39,6 @@ export const sampleworks = [
     link: 'https://abhiram-shaji.github.io/marine-awareness-retreat/',
   },
 
-  {
-    title: 'Langroove Landing Page',
-    description: 'Landing page for langroove language learning app',
-    logo: '/langroove-landing-page.png',
-    alt: 'Langroove landing page screenshot',
-    linkText: 'Preview',
-    link: 'https://langroove-webpage.vercel.app/',
-  },
 
   {
     title: 'Lars Tonroe Enhanced',
@@ -68,15 +60,6 @@ export const sampleworks = [
     alt: 'Llama bootstrap design screenshot',
     linkText: 'Preview',
     link: 'https://abhiram-shaji.github.io/Bootstrap_llama/',
-  },
-  {
-    title: 'Nourish Inbox UI UX',
-    description:
-      'A prototype of an inbox cleaner app designed to enhance email management and user experience by providing a clutter-free digital environment.',
-    logo: '/nourish-inbox-img.png',
-    alt: 'Nourish Inbox UI screenshot',
-    linkText: 'Preview',
-    link: 'https://xd.adobe.com/view/219dc65c-d45d-4d6b-b64c-4c4049d7698a-74ce/grid/',
   },
 
 
