@@ -1,4 +1,6 @@
-import Link from "next/link";
+import PrivacyPolicyModal from "@/components/sections/PrivacyPolicyModal";
+import TermsModal from "@/components/sections/TermsModal";
+import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   return (
@@ -8,20 +10,18 @@ export default function Footer() {
           © {new Date().getFullYear()} The Digital Uplift. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
-          <Link href="/privacy" className="hover:underline">
-            Privacy
-          </Link>
-          <Link href="/terms" className="hover:underline">
-            Terms
-          </Link>
-          <a
-            href="https://www.linkedin.com/in/abhiram-kace/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            LinkedIn
-          </a>
+          <PrivacyPolicyModal />
+          <TermsModal />
+
+          <Button asChild variant="link" className="text-sm p-0 h-auto">
+            <a
+              href="https://www.linkedin.com/in/abhiram-kace/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </Button>
         </div>
       </div>
     </footer>
