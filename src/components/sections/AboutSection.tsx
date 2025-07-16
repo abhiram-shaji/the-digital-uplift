@@ -1,5 +1,4 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Globe, Linkedin } from "lucide-react";
 
 export default function AboutSection() {
   return (
