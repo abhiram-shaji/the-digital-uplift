@@ -1,20 +1,35 @@
-// components/Hero.tsx
-
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-[#f1f5f9] py-20 text-center px-6 md:px-12">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Build Professional Website Starting at <span className="text-[#f9bc60]">$169 CAD</span>
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-700 mb-8">
-          Limited time launch offer! Book a free appointment now!
-        </p>
-        <a href="#book" className="inline-block">
-          <Button className="text-lg px-6 py-3">Book Now</Button>
-        </a>
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="/hero-bg.png"
+        alt="Hero Background"
+        fill
+        className="object-cover z-0"
+        priority
+      />
+
+      {/* Light overlay tint (no blur now) */}
+      <div className="absolute inset-0 bg-black/80 z-0" />
+
+      {/* Foreground content */}
+      <div className="relative z-10 h-full w-full flex items-center justify-center px-6 md:px-12">
+        <div className="bg-white rounded-2xl p-10 sm:p-16 text-center max-w-5xl shadow-lg">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+            Build Professional Website Starting at{" "}
+            <span className="text-[#f9bc60]">$169 CAD</span>
+          </h1>
+          <p className="text-2xl md:text-3xl text-gray-700 mb-10">
+            Limited time launch offer! Book a free appointment now!
+          </p>
+          <a href="#book" className="inline-block">
+            <Button className="text-xl px-8 py-4">Book Now</Button>
+          </a>
+        </div>
       </div>
     </section>
   );
