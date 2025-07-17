@@ -10,7 +10,7 @@ export default function SampleWorksSection() {
     <section id="works" className="py-16">
       <div className="container space-y-12">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight">
+          <h2 className="text-3xl text-[#f9bc60] font-bold tracking-tight">
             Sample Works
           </h2>
         </div>
