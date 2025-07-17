@@ -28,7 +28,7 @@ export default function MobileAppPackageCard() {
           </div>
           <div className="flex items-center gap-2">
             <Paintbrush2 className="w-4 h-4" />
-            <span>Branded design to match your website</span>
+            <span>Branded design</span>
           </div>
           <div className="flex items-center gap-2">
             <CalendarCheck2 className="w-4 h-4" />

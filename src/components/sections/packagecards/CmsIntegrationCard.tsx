@@ -21,26 +21,23 @@ export default function CmsIntegrationCard() {
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-3 text-muted-foreground text-sm pl-4">
-        <p>
-          Keep your website fresh and up to date{" "}
-          <strong>without needing a developer.</strong>
-        </p>
+
         <div className="space-y-2">
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
             <LayoutDashboard className="w-4 h-4" />
-            <span>Update your content easily with an admin dashboard</span>
+            <span>Easy content update</span>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
             <Code2 className="w-4 h-4" />
             <span>No coding required</span>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
             <BookOpenCheck className="w-4 h-4" />
-            <span>Includes a step-by-step CMS training document</span>
+            <span>Includes training document</span>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
             <Notebook className="w-4 h-4" />
-            <span>Perfect for blogs, service-based sites, or portfolios</span>
+            <span>Perfect for menu and prices</span>
           </div>
         </div>
       </CardContent>
