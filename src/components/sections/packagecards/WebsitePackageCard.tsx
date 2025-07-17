@@ -49,10 +49,6 @@ export default function WebsitePackageCard() {
           <Server className="w-4 h-4" />
           <span>Hosting included</span>
         </div>
-        <div className="flex items-center gap-2">
-          <Star className="w-4 h-4" />
-          <span>Great for portfolios, local businesses, services, events</span>
-        </div>
       </CardContent>
     </Card>
   );

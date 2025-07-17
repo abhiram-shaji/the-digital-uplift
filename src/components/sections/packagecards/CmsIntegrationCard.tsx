@@ -28,22 +28,24 @@ export default function CmsIntegrationCard() {
         </p>
 
         <div className="space-y-2">
-          <div className="flex items-center gap-2">
+
+          <div className="flex items-center gap-1">
             <LayoutDashboard className="w-4 h-4" />
             <span>Update your content easily with an admin dashboard</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <Code2 className="w-4 h-4" />
             <span>No coding required</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <BookOpenCheck className="w-4 h-4" />
             <span>Includes a step-by-step CMS training document</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <Notebook className="w-4 h-4" />
             <span>Perfect for blogs, service-based sites, or portfolios</span>
           </div>
+
         </div>
       </CardContent>
     </Card>
