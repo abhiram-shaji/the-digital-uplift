@@ -1,4 +1,3 @@
-// components/ui/BookingModal.tsx
 "use client";
 
 import { useBookingModal } from "./BookingModalContext";
@@ -8,6 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 import { Phone, Video } from "lucide-react";
 
 export default function BookingModal() {
@@ -24,7 +24,9 @@ export default function BookingModal() {
         {step === "select" ? (
           <>
             <DialogHeader>
-              <DialogTitle className="text-2xl">Book Your Free Appointment</DialogTitle>
+              <DialogTitle className="text-2xl">
+                Book Your Free Appointment
+              </DialogTitle>
             </DialogHeader>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
               <div
@@ -49,7 +51,7 @@ export default function BookingModal() {
                   <span className="font-semibold">Phone Call</span>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  We&apos;ll give you a call at your preferred time.
+                  We'll give you a call at your preferred time.
                 </p>
               </div>
             </div>
@@ -61,11 +63,13 @@ export default function BookingModal() {
                 Choose a time for our Google Meet
               </DialogTitle>
             </DialogHeader>
-            <iframe
-              src="https://calendar.app.google/8K3DK5XKHTbJgvhX7"
-              className="w-full h-[600px] border rounded-md"
-              loading="lazy"
-            ></iframe>
+            <div className="bg-white dark:bg-white rounded-md p-4 shadow-md ring-1 ring-gray-300">
+              <iframe
+                src="https://calendar.app.google/8K3DK5XKHTbJgvhX7"
+                className="w-full h-[600px] border rounded-md"
+                loading="lazy"
+              ></iframe>
+            </div>
           </>
         ) : (
           <>
@@ -74,11 +78,13 @@ export default function BookingModal() {
                 Choose a time for a Phone Call
               </DialogTitle>
             </DialogHeader>
-            <iframe
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32_yQ80V6qntX-bKyuqajbEAQ_QLLsJe3FjQKe_6H0aB4jkcKHJc1Z-XyLon9qmCGjyYaUAKv7?gv=true"
-              className="w-full h-[600px] border rounded-md"
-              loading="lazy"
-            ></iframe>
+            <div className="bg-white dark:bg-white rounded-md p-4 shadow-md ring-1 ring-gray-300">
+              <iframe
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32_yQ80V6qntX-bKyuqajbEAQ_QLLsJe3FjQKe_6H0aB4jkcKHJc1Z-XyLon9qmCGjyYaUAKv7?gv=true"
+                className="w-full h-[600px] border rounded-md"
+                loading="lazy"
+              ></iframe>
+            </div>
           </>
         )}
       </DialogContent>
