@@ -14,22 +14,13 @@ import {
 
 export default function WebsitePackageCard() {
   return (
-    <div className="relative rounded-xl border bg-white shadow-md pt-16 pb-4 px-4 text-center">
+    <div className="relative rounded-xl border bg-white shadow-md py-4 px-4 text-center">
       {/* 🚩 Banner in top-right corner */}
       <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-red-500 text-white text-[10px] sm:text-xs font-semibold px-2 sm:px-3 py-1 rounded-md shadow-md z-20 max-w-[70%] sm:max-w-none text-center">
         Limited time offer! 
       </div>
 
 
-      {/* 🟢 Icon - Centered and overlapping top */}
-      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full bg-white flex items-center justify-center shadow-lg z-10">
-        <Image
-          src="/web-design-icon.png"
-          alt="Website Icon"
-          width={48}
-          height={48}
-        />
-      </div>
 
       {/* 🔵 Main Content */}
       <div className="w-full bg-white/85 backdrop-blur-sm rounded-lg p-4 mt-2">

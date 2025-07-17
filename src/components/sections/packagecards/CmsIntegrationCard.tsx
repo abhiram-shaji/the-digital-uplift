@@ -9,16 +9,8 @@ import {
 
 export default function CmsIntegrationCard() {
   return (
-    <div className="relative rounded-xl border bg-white shadow-md pt-16 pb-4 px-4 text-center">
-      {/* Icon at the top center, overlapping */}
-      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full bg-white flex items-center justify-center shadow-lg">
-        <Image
-          src="/cms-icon.png"
-          alt="CMS Icon"
-          width={48}
-          height={48}
-        />
-      </div>
+    <div className="relative rounded-xl border bg-white shadow-md py-4 px-4 text-center">
+
 
       {/* Card content */}
       <div className="w-full bg-white/85 backdrop-blur-sm rounded-lg p-4 mt-2">
