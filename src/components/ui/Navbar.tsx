@@ -36,7 +36,11 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Logo" className="h-8 w-auto sm:h-10 dark:invert" />
+          <img
+            src="/logo.png"
+            alt="The Digital Uplift logo"
+            className="h-8 w-auto sm:h-10 dark:invert"
+          />
           <span className="text-lg font-semibold tracking-tight">
             The Digital Uplift
           </span>
