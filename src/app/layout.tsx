@@ -20,8 +20,44 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Digital Uplift",
-  description: "Professional websites starting at 149 CAD",
+  metadataBase: new URL("https://www.thedigitaluplift.ca"),
+  title: "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
+  description:
+    "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff—just results.",
+  openGraph: {
+    title:
+      "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
+    description:
+      "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff—just results.",
+    url: "https://www.thedigitaluplift.ca",
+    siteName: "The Digital Uplift",
+    images: [
+      {
+        url: "/hero-bg.png",
+        width: 1200,
+        height: 630,
+        alt: "Affordable web design for Canadian small businesses",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
+    description:
+      "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff—just results.",
+    images: [
+      {
+        url: "/hero-bg.png",
+        alt: "Affordable web design for Canadian small businesses",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.thedigitaluplift.ca",
+  },
 };
 
 export default function RootLayout({
