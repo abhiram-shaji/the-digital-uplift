@@ -6,6 +6,9 @@ import Navbar from "@/components/ui/Navbar";
 import Hero from "@/components/sections/Hero";
 import Footer from "@/components/ui/Footer";
 
+import { BookingModalProvider } from "@/components/ui/BookingModalContext"; // ✅ Add provider
+import BookingModal from "@/components/ui/BookingModal"; // ✅ Add modal itself
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,15 +34,16 @@ export default function RootLayout({
       <body
         className={`min-h-screen flex flex-col bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}
       >
-        <Navbar />
-        <Hero />
-        <main className="flex-1 mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-screen-xl">
-
-          {children}
-        </main>
-        <Footer />
+        <BookingModalProvider>
+          <Navbar />
+          <Hero />
+          <main className="flex-1 mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-screen-xl">
+            {children}
+          </main>
+          <Footer />
+          <BookingModal /> {/* ✅ Mount once globally */}
+        </BookingModalProvider>
       </body>
     </html>
   );
 }
-
