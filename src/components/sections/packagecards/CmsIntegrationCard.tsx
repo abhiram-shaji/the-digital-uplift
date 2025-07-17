@@ -14,7 +14,7 @@ import {
 
 export default function CmsIntegrationCard() {
   return (
-    <Card className="relative text-center py-4 px-4 bg-white shadow-md border rounded-xl">
+    <Card className="relative text-center py-4 px-4 bg-white dark:bg-muted shadow-md border rounded-xl">
       <CardHeader>
         <CardTitle className="text-base mb-3">
           CMS Integration – From 199 CAD

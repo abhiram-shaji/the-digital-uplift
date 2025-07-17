@@ -41,8 +41,9 @@ export default function Navbar() {
             The Digital Uplift
           </span>
         </Link>
-        <DesktopNav />
         <div className="flex items-center gap-2">
+          <DesktopNav />
+
           <ThemeToggle />
           <MobileNav />
         </div>

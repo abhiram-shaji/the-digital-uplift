@@ -4,37 +4,48 @@ import * as React from "react"
 import { motion, HTMLMotionProps } from "framer-motion"
 import { cn } from "@/lib/utils"
 
-function Card({ className, ...props }: HTMLMotionProps<"div">) {
+export default function Card({ className, ...props }: HTMLMotionProps<"div">) {
+  const [hovered, setHovered] = React.useState(false)
+
   return (
     <motion.div
       data-slot="card"
-      whileHover={{
-        boxShadow: [
-          "0 0 0px #00f7ff",
-          "0 0 8px #00f7ff",
-          "0 0 16px #00f7ff",
-          "0 0 24px #00f7ff",
-          "0 0 16px #00f7ff",
-          "0 0 8px #00f7ff",
-          "0 0 0px #00f7ff"
-        ],
-        transition: {
-          duration: 2,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut"
-        }
+      onHoverStart={() => setHovered(true)}
+      onHoverEnd={() => setHovered(false)}
+      animate={{
+        boxShadow: hovered
+          ? [
+              "0 0 6px #00f7ff",
+              "0 0 16px #00f7ff",
+              "0 0 32px #00f7ff",
+              "0 0 48px #00f7ff",
+              "0 0 32px #00f7ff",
+              "0 0 16px #00f7ff",
+              "0 0 6px #00f7ff",
+            ]
+          : "0 0 0px #00f7ff",
       }}
+      transition={
+        hovered
+          ? {
+              duration: 0.4,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "loop",
+            }
+          : {
+              duration: 0.1,
+              ease: "easeOut",
+            }
+      }
       className={cn(
-        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
+        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm transition-all",
         className
       )}
       {...props}
     />
   )
 }
-
-
 
 
 function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
