@@ -12,9 +12,6 @@ export default function ServicesSection() {
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight">
             Our Packages{" "}
-            <span className="block text-muted-foreground text-lg">
-              (Founder&apos;s Launch Offer)
-            </span>
           </h2>
         </div>
 

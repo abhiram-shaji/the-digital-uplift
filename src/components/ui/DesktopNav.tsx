@@ -23,7 +23,7 @@ export default function DesktopNav() {
         </Link>
       ))}
 
-      <Button size="sm" asChild className="ml-2">
+      <Button variant="animated">
         <a href="#book">Book Now</a>
       </Button>
 

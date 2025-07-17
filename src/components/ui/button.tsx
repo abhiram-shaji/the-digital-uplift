@@ -20,6 +20,8 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+        animated:
+          "group py-4 px-8 bg-red-600 text-white rounded-xl font-extrabold hover:bg-black transition-colors duration-500 delay-[0.1s] ease-[cubic-bezier(0.19,1,0.22,1)] cursor-pointer",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -40,19 +42,46 @@ function Button({
   variant,
   size,
   asChild = false,
+  children,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean
+    children: React.ReactNode
   }) {
   const Comp = asChild ? Slot : "button"
+  const isAnimated = variant === "animated"
+
+  if (isAnimated) {
+    return (
+      <Comp
+        data-slot="button"
+        className={cn(buttonVariants({ variant, size, className }))}
+        {...props}
+      >
+        <div className="overflow-hidden relative">
+          <p className="text-white group-hover:translate-y-[-20px] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]">
+            {children}
+          </p>
+          <p
+            aria-hidden
+            className="absolute left-0 top-5 text-red-600 group-hover:top-0 duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]"
+          >
+            {children}
+          </p>
+        </div>
+      </Comp>
+    )
+  }
 
   return (
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    />
+    >
+      {children}
+    </Comp>
   )
 }
 
