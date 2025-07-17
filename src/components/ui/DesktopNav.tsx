@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import BookingModalTrigger from "@/components/ui/BookingModalTrigger"; // ✅ Import trigger
 
 const navItems = [
