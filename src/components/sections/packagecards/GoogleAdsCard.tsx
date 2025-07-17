@@ -22,26 +22,21 @@ export default function GoogleAdsCard() {
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-3 text-muted-foreground text-sm pl-4">
-        <p>Want your business to show up right when someone’s searching for your service?</p>
-        <div className="flex items-center gap-1">
-          <Target className="w-4 h-4" />
-          <p className="m-0">Be Seen by the Right People, at the Right Time.</p>
-        </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
           <TrendingUp className="w-4 h-4" />
-          <p className="m-0">Google Ads gets you to the top of search results.</p>
+          <p className="m-0">Targeted advertising.</p>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
           <Clock className="w-4 h-4" />
-          <p className="m-0">Quick setup, start getting clicks in hours, not weeks.</p>
+          <p className="m-0">Quick setup.</p>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
           <Users className="w-4 h-4" />
-          <p className="m-0">Attract local, ready-to-buy customers.</p>
+          <p className="m-0">Attract customers.</p>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
           <BarChart2 className="w-4 h-4" />
-          <p className="m-0">Performance insights to track what’s working.</p>
+          <p className="m-0">Performance insights.</p>
         </div>
       </CardContent>
     </Card>
