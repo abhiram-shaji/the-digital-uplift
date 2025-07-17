@@ -14,10 +14,13 @@ import {
 import { ReadMoreModal } from "@/components/ui/ReadMoreModal";
 
 const cmsContent = `
-Our CMS Package equips you with a fully manageable website where you control content through an intuitive dashboard. Add, edit, or remove pages and posts without needing to touch code.
+Our CMS Package gives you complete control over your website content through a secure and easy-to-use dashboard. Built with a focus on flexibility and performance, it is ideal for businesses, blogs, and portfolios that require frequent updates.
 
-We implement secure authentication, role-based access control, and optimized backend setups. Perfect for blogs, portfolios, or business sites needing frequent content updates.
+You can create, edit, or delete pages and posts without writing any code. We integrate secure authentication and role-based access to ensure only authorized users can make changes. The backend is optimized for speed, reliability, and long-term scalability.
+
+You only make payment once the entire system is delivered and you are fully satisfied. Perfect for clients who want independence without sacrificing professional quality. Built by Abhiram Shaji to offer small businesses real autonomy in managing their digital presence.
 `;
+
 
 export default function CmsPackageCard() {
   return (

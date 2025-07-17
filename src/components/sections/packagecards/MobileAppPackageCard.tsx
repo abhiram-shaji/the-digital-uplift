@@ -15,10 +15,13 @@ import {
 import { ReadMoreModal } from "@/components/ui/ReadMoreModal";
 
 const mobileAppContent = `
-Our Mobile App Package offers you a tailored experience across both iOS and Android platforms. Designed with branding in mind, your app will reflect your unique identity and business objectives.
+Our Mobile App Package is crafted for local businesses looking to expand their reach through custom iOS and Android apps. Every app reflects your brand identity and goals, with a thoughtful user experience designed using best industry practices.
 
-From in-app messaging and push notifications to loyalty programs and bookings, we integrate features that improve user engagement and retention. We handle the design, development, and deployment—all in one package.
+Apps can include messaging, push notifications, loyalty programs, booking features, and more—all tailored to boost engagement and retention. We oversee every step, from initial design to final deployment on app stores, ensuring a smooth process and a product that serves your business.
+
+Payment is only needed once everything is fully delivered and you are completely satisfied with your app. Developed personally by Abhiram Shaji, with a focus on quality and affordability for small business owners who deserve enterprise-grade tools without the agency markup.
 `;
+
 
 export default function MobileAppPackageCard() {
   return (
