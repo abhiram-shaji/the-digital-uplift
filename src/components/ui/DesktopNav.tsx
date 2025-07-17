@@ -1,8 +1,8 @@
-// components/DesktopNav.tsx
 "use client";
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import BookingModalTrigger from "@/components/ui/BookingModalTrigger"; // ✅ Import trigger
 
 const navItems = [
   { label: "Services", href: "#services" },
@@ -23,9 +23,8 @@ export default function DesktopNav() {
         </Link>
       ))}
 
-      <Button variant="animated">
-        <a href="#book">Book Now</a>
-      </Button>
+      {/* 🔁 Replace static link with shared modal trigger */}
+      <BookingModalTrigger />
 
       <style jsx>{`
         .hover-underline {
