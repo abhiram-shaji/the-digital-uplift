@@ -5,7 +5,6 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import {
-  Target,
   TrendingUp,
   Clock,
   Users,

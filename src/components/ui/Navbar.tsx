@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import clsx from "clsx";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
@@ -36,7 +37,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2">
-          <img
+          <Image
             src="/logo.png"
             alt="The Digital Uplift logo"
             className="h-8 w-auto sm:h-10 dark:invert"
