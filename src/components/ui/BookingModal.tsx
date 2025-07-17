@@ -28,7 +28,8 @@ export default function BookingModal() {
         <Button variant="animated"> Book Now</Button>
       </DialogTrigger>
 
-      <DialogContent className="max-w-4xl">
+      <DialogContent className="max-w-[90vw] max-h-[90vh] overflow-y-auto">
+
         {step === "select" ? (
           <>
             <DialogHeader>
