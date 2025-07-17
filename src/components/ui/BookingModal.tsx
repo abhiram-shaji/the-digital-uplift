@@ -25,7 +25,7 @@ export default function BookingModal() {
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
-        <Button size="lg" variant="animated"> Book Now</Button>
+        <Button variant="animated"> Book Now</Button>
       </DialogTrigger>
 
       <DialogContent className="max-w-4xl">
