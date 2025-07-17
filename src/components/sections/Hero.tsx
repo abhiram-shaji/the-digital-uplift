@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="bg-white rounded-2xl p-10 sm:p-16 text-center max-w-5xl shadow-lg">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             Build Professional Website Starting at{" "}
-            <span className="text-[#f9bc60]">$169 CAD</span>
+            <span className="text-[#f9bc60]">$299 CAD</span>
           </h1>
           <p className="text-2xl md:text-3xl text-gray-700 mb-10">
             Limited time launch offer! Book a free appointment now!

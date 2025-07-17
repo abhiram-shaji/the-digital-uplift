@@ -25,7 +25,7 @@ export default function MobileAppPackageCard() {
       {/* Title and content */}
       <div className="w-full bg-white/85 backdrop-blur-sm rounded-lg p-4 mt-2">
         <CardTitle className="text-base mb-3">
-          Mobile App Package – From 499 CAD
+          Mobile App Package – From 999 CAD
         </CardTitle>
         <CardContent className="space-y-4 text-muted-foreground text-sm p-0">
           <div className="space-y-2">
