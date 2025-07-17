@@ -1,35 +1,26 @@
+// components/ui/BookingModal.tsx
 "use client";
 
-import { useState } from "react";
+import { useBookingModal } from "./BookingModalContext";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 import { Phone, Video } from "lucide-react";
 
 export default function BookingModal() {
-  const [open, setOpen] = useState(false);
-  const [step, setStep] = useState<"select" | "google" | "phone">("select");
+  const { open, setOpen, step, setStep } = useBookingModal();
 
   const handleOpenChange = (isOpen: boolean) => {
     setOpen(isOpen);
-    if (!isOpen) {
-      setStep("select"); // Reset to selection when modal closes
-    }
+    if (!isOpen) setStep("select");
   };
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
-      <DialogTrigger asChild>
-        <Button variant="animated"> Book Now</Button>
-      </DialogTrigger>
-
       <DialogContent className="max-w-[90vw] max-h-[90vh] overflow-y-auto">
-
         {step === "select" ? (
           <>
             <DialogHeader>
@@ -66,7 +57,9 @@ export default function BookingModal() {
         ) : step === "google" ? (
           <>
             <DialogHeader>
-              <DialogTitle className="text-2xl mb-4">Choose a time for our Google Meet</DialogTitle>
+              <DialogTitle className="text-2xl mb-4">
+                Choose a time for our Google Meet
+              </DialogTitle>
             </DialogHeader>
             <iframe
               src="https://calendar.app.google/8K3DK5XKHTbJgvhX7"
@@ -77,7 +70,9 @@ export default function BookingModal() {
         ) : (
           <>
             <DialogHeader>
-              <DialogTitle className="text-2xl mb-4">Choose a time for a Phone Call</DialogTitle>
+              <DialogTitle className="text-2xl mb-4">
+                Choose a time for a Phone Call
+              </DialogTitle>
             </DialogHeader>
             <iframe
               src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32_yQ80V6qntX-bKyuqajbEAQ_QLLsJe3FjQKe_6H0aB4jkcKHJc1Z-XyLon9qmCGjyYaUAKv7?gv=true"
