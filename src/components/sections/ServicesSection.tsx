@@ -8,7 +8,7 @@ import GoogleAdsCard from "@/components/sections/packagecards/GoogleAdsCard";
 export default function ServicesSection() {
   return (
     <section id="services" className="py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div className="container space-y-12">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight">
             Our Packages{" "}

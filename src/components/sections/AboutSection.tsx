@@ -2,8 +2,8 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="px-6 md:px-12 bg-background">
-      <div className="max-w-4xl mx-auto text-center space-y-12">
+    <section id="about" className="bg-background">
+      <div className="mx-auto text-center space-y-12">
 
 
 
