@@ -1,4 +1,8 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+"use client";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { Card, CardContent } from "@/components/ui/card";
+
+const words = `Our mission is to help Canadian small businesses grow with a strong digital presence. At The Digital Uplift, you work directly with the designers and developers who bring your vision to life. We believe every business deserves smart tools, clean design, and the visibility to reach more customers online without overpriced agencies or middlemen.`;
 
 export default function AboutSection() {
   return (
@@ -8,22 +12,10 @@ export default function AboutSection() {
 
 
         {/* Mission Card */}
-        <Card className="bg-white dark:bg-muted">
-          <CardHeader>
-            <CardTitle className="text-2xl"><h2 className="text-4xl font-bold text-foreground">About Us</h2></CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4 text-left text-muted-foreground text-base">
-            <p>
-              Our mission is to help as many local Canadian small businesses as possible build a powerful digital presence
-              so they can grow, scale, and succeed in today’s digital first world.
-            
-              We exist to eliminate the need for overpriced agencies and middlemen. At The Digital Uplift, you work directly
-              with the developers and designers who bring your vision to life. No salespeople, no fluff, just results.
-            
-              We believe every business, no matter how small, deserves access to clean design, smart tools, and the visibility
-              to reach more customers online.
-            </p>
-          </CardContent>
+        <Card className="bg-white dark:bg-muted p-5">
+          <h2 className="text-4xl font-bold text-foreground">About Us</h2>
+          <TextGenerateEffect words={words} />
+
         </Card>
       </div>
     </section>
