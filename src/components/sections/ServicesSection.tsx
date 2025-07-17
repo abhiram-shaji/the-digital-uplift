@@ -3,10 +3,7 @@ import WebsitePackageCard from "@/components/sections/packagecards/WebsitePackag
 import MobileAppPackageCard from "@/components/sections/packagecards/MobileAppPackageCard";
 import CmsIntegrationCard from "@/components/sections/packagecards/CmsIntegrationCard";
 import GoogleAdsCard from "@/components/sections/packagecards/GoogleAdsCard";
-import CallRoutingCard from "@/components/sections/packagecards/CallRoutingCard";
-import RealTimeBiddingCard from "@/components/sections/packagecards/RealTimeBiddingCard";
-import BillingPaymentsCard from "@/components/sections/packagecards/BillingPaymentsCard";
-import AnalyticsCard from "@/components/sections/packagecards/AnalyticsCard";
+
 
 export default function ServicesSection() {
   return (
@@ -26,10 +23,6 @@ export default function ServicesSection() {
           <MobileAppPackageCard />
           <CmsIntegrationCard />
           <GoogleAdsCard />
-          <CallRoutingCard />
-          <RealTimeBiddingCard />
-          <BillingPaymentsCard />
-          <AnalyticsCard />
         </div>
       </div>
     </section>
