@@ -6,6 +6,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [hidden, setHidden] = useState(false);
@@ -35,13 +36,16 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Logo" className="h-8 w-auto sm:h-10" />
+          <img src="/logo.png" alt="Logo" className="h-8 w-auto sm:h-10 dark:invert" />
           <span className="text-lg font-semibold tracking-tight">
             The Digital Uplift
           </span>
         </Link>
         <DesktopNav />
-        <MobileNav />
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
