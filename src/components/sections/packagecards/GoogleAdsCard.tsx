@@ -5,20 +5,24 @@ import {
   CardContent,
   CardHeader,
 } from "@/components/ui/card";
-import { Target, TrendingUp, Clock, Users, BarChart2 } from "lucide-react";
+import {
+  Target,
+  TrendingUp,
+  Clock,
+  Users,
+  BarChart2,
+} from "lucide-react";
 
 export default function GoogleAdsCard() {
   return (
-    <Card className="relative text-center py-4 px-4 bg-white dark:bg-muted shadow-md border rounded-xl">
-      <CardHeader>
+    <Card className="relative text-left py-4 px-4 bg-white dark:bg-muted shadow-md border rounded-xl">
+      <CardHeader className="pl-2">
         <CardTitle className="text-base mb-3">
           Google Ads Campaign Setup – 149 CAD
         </CardTitle>
       </CardHeader>
-
-      <CardContent className="space-y-3 text-muted-foreground text-sm p-0">
+      <CardContent className="space-y-3 text-muted-foreground text-sm pl-4">
         <p>Want your business to show up right when someone’s searching for your service?</p>
-
         <div className="flex items-center gap-1">
           <Target className="w-4 h-4" />
           <p className="m-0">Be Seen by the Right People, at the Right Time.</p>

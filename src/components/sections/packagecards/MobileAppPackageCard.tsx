@@ -11,19 +11,16 @@ import {
   CalendarCheck2,
   MessageCircle,
   Bell,
-  Gift
+  Gift,
 } from "lucide-react";
 
 export default function MobileAppPackageCard() {
   return (
-    <Card className="relative text-center py-4 px-4 bg-white dark:bg-muted shadow-md border rounded-xl">
-      <CardHeader>
-        <CardTitle className="text-base">
-          Mobile App Package – From 999 CAD
-        </CardTitle>
+    <Card className="relative text-left py-4 px-4 bg-white dark:bg-muted shadow-md border rounded-xl">
+      <CardHeader className="pl-2">
+        <CardTitle className="text-base">Mobile App Package – From 999 CAD</CardTitle>
       </CardHeader>
-
-      <CardContent className="space-y-4 text-muted-foreground text-sm p-0">
+      <CardContent className="space-y-4 text-muted-foreground text-sm pl-4">
         <div className="space-y-2">
           <div className="flex items-center gap-2">
             <Smartphone className="w-4 h-4" />
