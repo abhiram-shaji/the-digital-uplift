@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
-
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
@@ -20,8 +19,7 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
-        animated:
-          "group py-4 px-8 bg-red-600 text-white rounded-xl font-extrabold hover:bg-black transition-colors duration-500 delay-[0.1s] ease-[cubic-bezier(0.19,1,0.22,1)] cursor-pointer",
+        animated: "", // ✅ Needed for type compatibility
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -50,30 +48,27 @@ function Button({
     children: React.ReactNode
   }) {
   const Comp = asChild ? Slot : "button"
-  const isAnimated = variant === "animated"
 
-  if (isAnimated) {
+  // ✅ Custom layout for animated variant
+  if (variant === "animated") {
     return (
-      <Comp
-        data-slot="button"
-        className={cn(buttonVariants({ variant, size, className }))}
-        {...props}
-      >
-        <div className="overflow-hidden relative">
-          <p className="text-white group-hover:translate-y-[-20px] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]">
-            {children}
-          </p>
-          <p
-            aria-hidden
-            className="absolute left-0 top-5 text-red-600 group-hover:top-0 duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]"
-          >
-            {children}
-          </p>
-        </div>
-      </Comp>
+      <div className="relative inline-flex group">
+        <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt" />
+        <Comp
+          className={cn(
+            "relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900",
+            className
+          )}
+          data-slot="button"
+          {...props} // ✅ Apply props only to button
+        >
+          {children}
+        </Comp>
+      </div>
     )
   }
 
+  // ✅ Normal button variants
   return (
     <Comp
       data-slot="button"
