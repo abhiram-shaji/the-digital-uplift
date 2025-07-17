@@ -1,20 +1,42 @@
-import Image from "next/image";
+"use client";
+
+import { motion } from "framer-motion";
 import BookingModal from "@/components/ui/BookingModal";
 
 const Hero = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background image */}
-      <Image
-        src="/hero-bg.png"
-        alt="Hero Background"
-        fill
-        className="object-cover z-0"
-        priority
+      {/* Animated Vibrant Gradient Background */}
+      <motion.div
+        className="absolute inset-0 z-0"
+        initial={{ backgroundPosition: "0% 50%" }}
+        animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        style={{
+          backgroundImage:
+            "linear-gradient(270deg, #0f0c29, #302b63, #24243e, #0f172a)",
+          backgroundSize: "800% 800%",
+        }}
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/80 z-0" />
+      {/* Optional animated gradient overlay for depth */}
+      <motion.div
+        className="absolute inset-0 z-0"
+        initial={{ opacity: 0.6 }}
+        animate={{ opacity: [0.6, 0.9, 0.6] }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        style={{
+          background: "radial-gradient(circle at center, rgba(0,0,0,0.3), rgba(0,0,0,0.7))",
+        }}
+      />
 
       {/* Content */}
       <div className="relative z-10 h-full w-full flex items-center justify-center px-6 md:px-12">
