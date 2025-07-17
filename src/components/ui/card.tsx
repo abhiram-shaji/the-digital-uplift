@@ -1,11 +1,30 @@
-import * as React from "react"
+"use client"
 
+import * as React from "react"
+import { motion, HTMLMotionProps } from "framer-motion"
 import { cn } from "@/lib/utils"
 
-function Card({ className, ...props }: React.ComponentProps<"div">) {
+function Card({ className, ...props }: HTMLMotionProps<"div">) {
   return (
-    <div
+    <motion.div
       data-slot="card"
+      whileHover={{
+        boxShadow: [
+          "0 0 0px #00f7ff",
+          "0 0 8px #00f7ff",
+          "0 0 16px #00f7ff",
+          "0 0 24px #00f7ff",
+          "0 0 16px #00f7ff",
+          "0 0 8px #00f7ff",
+          "0 0 0px #00f7ff"
+        ],
+        transition: {
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut"
+        }
+      }}
       className={cn(
         "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
         className
@@ -14,6 +33,9 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
     />
   )
 }
+
+
+
 
 function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
