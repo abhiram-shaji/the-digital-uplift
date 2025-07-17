@@ -1,4 +1,3 @@
-
 import {
   Card,
   CardTitle,
@@ -13,6 +12,13 @@ import {
   Bell,
   Gift,
 } from "lucide-react";
+import { ReadMoreModal } from "@/components/ui/ReadMoreModal";
+
+const mobileAppContent = `
+Our Mobile App Package offers you a tailored experience across both iOS and Android platforms. Designed with branding in mind, your app will reflect your unique identity and business objectives.
+
+From in-app messaging and push notifications to loyalty programs and bookings, we integrate features that improve user engagement and retention. We handle the design, development, and deployment—all in one package.
+`;
 
 export default function MobileAppPackageCard() {
   return (
@@ -47,6 +53,7 @@ export default function MobileAppPackageCard() {
             <span>Loyalty or rewards system</span>
           </div>
         </div>
+        <ReadMoreModal title="Mobile App Package" content={mobileAppContent} />
       </CardContent>
     </Card>
   );
