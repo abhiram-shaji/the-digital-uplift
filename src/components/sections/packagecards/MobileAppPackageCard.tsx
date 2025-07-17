@@ -16,7 +16,7 @@ import {
 
 export default function MobileAppPackageCard() {
   return (
-    <Card className="relative text-center py-4 px-4 bg-white shadow-md border rounded-xl">
+    <Card className="relative text-center py-4 px-4 bg-white dark:bg-muted shadow-md border rounded-xl">
       <CardHeader>
         <CardTitle className="text-base">
           Mobile App Package – From 999 CAD
