@@ -14,10 +14,15 @@ import {
 import { ReadMoreModal } from "@/components/ui/ReadMoreModal";
 
 const googleAdsContent = `
-Our Google Ads Campaign service is designed to maximize your ROI by targeting the most relevant customers. We employ smart bidding strategies, keyword optimization, and precise audience targeting to ensure your ad budget is spent effectively.
+Our Google Ads Campaign service is perfect for businesses aiming to get noticed quickly and grow their customer base. We use smart bidding strategies, high-intent keyword targeting, and precise audience segmentation to make the most of your ad budget.
 
-With detailed performance analytics and constant A/B testing, we optimize your campaigns continuously. Whether you want to promote a local service or scale your e-commerce platform, we adapt our strategy to fit your goals.
+Campaigns are monitored and optimized continuously with A/B testing and real-time performance tracking through Google Analytics. Whether you are a local service provider or an e-commerce business, we tailor the strategy to match your unique goals.
+
+You only pay after your campaign is fully delivered and you are satisfied with the outcome. This service is designed to empower small businesses to compete effectively without wasting money on trial and error. Every campaign is managed directly by a developer who understands your vision.
 `;
+
+
+
 
 export default function GoogleAdsCard() {
   return (
