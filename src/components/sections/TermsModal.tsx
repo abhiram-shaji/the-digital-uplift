@@ -14,7 +14,7 @@ export default function TermsModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="link" className="text-sm p-0 h-auto">
+        <Button variant="link" className="text-sm p-0 h-auto" aria-label="Terms of Use Button">
           Terms of Use
         </Button>
       </DialogTrigger>

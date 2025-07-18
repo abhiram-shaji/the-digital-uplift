@@ -59,7 +59,7 @@ export default function MobileNav() {
               About
             </Link>
 
-            <Button size="lg" onClick={handleBookNow}>
+            <Button size="lg" onClick={handleBookNow} aria-label="Book Now Button Mobile">
               Book Now
             </Button>
           </div>

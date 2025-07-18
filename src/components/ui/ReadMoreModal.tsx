@@ -15,7 +15,7 @@ export function ReadMoreModal({ title, content }: ReadMoreModalProps) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" className="mt-4">
+        <Button variant="outline" className="mt-4" aria-label="Read more button">
           Read More
         </Button>
       </DialogTrigger>

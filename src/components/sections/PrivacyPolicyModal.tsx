@@ -14,7 +14,7 @@ export default function PrivacyPolicyModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="link" className="text-sm p-0 h-auto">
+        <Button variant="link" className="text-sm p-0 h-auto" aria-label="Privacy Policy Button">
           Privacy Policy
         </Button>
       </DialogTrigger>
