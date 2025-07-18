@@ -16,7 +16,7 @@ import { ReadMoreModal } from "@/components/ui/ReadMoreModal";
 const websiteContent = `
 The Website Package is ideal for small businesses aiming to make a powerful first impression online. Every website is built using modern technologies like React, Tailwind CSS, and Shadcn UI to deliver a clean, responsive, and mobile-optimized experience.
 
-Your site will be fully optimized for search engines, including essential meta tags, semantic HTML structure, and fast load performance. We handle everything from Google Analytics setup, secure hosting, Canadian domain registration, SSL integration, and launch-readiness—so you do not have to worry about technical details.
+Your site will be fully optimized for search engines, including essential meta tags, semantic HTML structure, and fast load performance. We handle everything from Google Analytics setup, secure hosting, Canadian domain registration, SSL integration, and launch-readiness so you do not have to worry about technical details.
 
 Training is provided so you can manage your site with confidence, and post-launch support ensures you are never left on your own. Payment is only needed once the project is complete and you are fully satisfied with the final result. This is a complete, ownership-guaranteed package crafted by Abhiram Shaji, a developer committed to helping local businesses thrive at an affordable price.
 `;
