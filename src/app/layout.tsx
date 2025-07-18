@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.thedigitaluplift.ca"),
   title: "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
   description:
-    "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff—just results.",
+    "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff, just results.",
   openGraph: {
     title:
       "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
