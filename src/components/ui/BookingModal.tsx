@@ -19,7 +19,7 @@ export default function BookingModal() {
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
-      <DialogContent className="max-w-[95vw] max-h-[95vh] overflow-y-hidden">
+      <DialogContent className="max-w-[90vw] max-h-[90vh] overflow-y-auto">
         {step === "select" ? (
           <>
             <DialogHeader>
@@ -50,7 +50,7 @@ export default function BookingModal() {
                   <span className="font-semibold">Phone Call</span>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  We&apos;ll give you a call at your preferred time.
+                  We`&apos;`ll give you a call at your preferred time.
                 </p>
               </div>
             </div>
@@ -62,14 +62,12 @@ export default function BookingModal() {
                 Choose a time for our Google Meet
               </DialogTitle>
             </DialogHeader>
-            <div className="overflow-x-auto overflow-y-hidden">
-              <div className="min-w-[1000px] h-[600px]">
-                <iframe
-                  src="https://calendar.app.google/8K3DK5XKHTbJgvhX7"
-                  className="w-full h-full border rounded-md"
-                  loading="lazy"
-                ></iframe>
-              </div>
+            <div className="bg-white dark:bg-white rounded-md p-4 shadow-md ring-1 ring-gray-300">
+              <iframe
+                src="https://calendar.app.google/8K3DK5XKHTbJgvhX7"
+                className="w-full h-[600px] border rounded-md"
+                loading="lazy"
+              ></iframe>
             </div>
           </>
         ) : (
@@ -79,14 +77,12 @@ export default function BookingModal() {
                 Choose a time for a Phone Call
               </DialogTitle>
             </DialogHeader>
-            <div className="overflow-x-auto overflow-y-hidden">
-              <div className="min-w-[1000px] h-[600px]">
-                <iframe
-                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32_yQ80V6qntX-bKyuqajbEAQ_QLLsJe3FjQKe_6H0aB4jkcKHJc1Z-XyLon9qmCGjyYaUAKv7?gv=true"
-                  className="w-full h-full border rounded-md"
-                  loading="lazy"
-                ></iframe>
-              </div>
+            <div className="bg-white dark:bg-white rounded-md p-4 shadow-md ring-1 ring-gray-300">
+              <iframe
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32_yQ80V6qntX-bKyuqajbEAQ_QLLsJe3FjQKe_6H0aB4jkcKHJc1Z-XyLon9qmCGjyYaUAKv7?gv=true"
+                className="w-full h-[600px] border rounded-md"
+                loading="lazy"
+              ></iframe>
             </div>
           </>
         )}
