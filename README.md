@@ -66,14 +66,6 @@ The Digital Uplift is a modern web platform designed to help businesses elevate 
 └── utils/            # Helper functions
 
 
-## Deployment
-
-This project can be deployed on any platform that supports Next.js, such as:
-
-* [Vercel](https://vercel.com)
-* [Netlify](https://www.netlify.com)
-* [Render](https://render.com)
-
 ## Credits
 
 * [shadcn/ui](https://ui.shadcn.com)
