@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import Script from "next/script";
 import Navbar from "@/components/ui/Navbar";
 import Hero from "@/components/sections/Hero";
 import Footer from "@/components/ui/Footer";
-
-import { BookingModalProvider } from "@/components/ui/BookingModalContext"; // ✅ Add provider
-import BookingModal from "@/components/ui/BookingModal"; // ✅ Add modal itself
+import { BookingModalProvider } from "@/components/ui/BookingModalContext";
+import BookingModal from "@/components/ui/BookingModal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,6 +67,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-006TGEC1M4"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-006TGEC1M4');
+          `}
+        </Script>
+      </head>
       <body
         className={`min-h-screen flex flex-col bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}
       >
@@ -77,7 +92,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
-          <BookingModal /> {/* ✅ Mount once globally */}
+          <BookingModal />
         </BookingModalProvider>
       </body>
     </html>
