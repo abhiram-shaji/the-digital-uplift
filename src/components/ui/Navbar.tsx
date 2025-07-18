@@ -40,6 +40,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="The Digital Uplift logo"
+            width={120} // Add width
+            height={40} // Add height
             className="h-8 w-auto sm:h-10 dark:invert"
           />
           <span className="text-lg font-semibold tracking-tight">
