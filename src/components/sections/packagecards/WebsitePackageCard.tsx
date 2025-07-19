@@ -24,7 +24,7 @@ Training is provided so you can manage your site with confidence, and post-launc
 
 export default function WebsitePackageCard() {
   return (
-    <Card className="relative text-left py-4 px-4 bg-white dark:bg-muted shadow-md border rounded-xl">
+    <Card className="relative text-left py-4 px-4 shadow-md border rounded-xl">
       <div className="absolute top-10 right-2 sm:top-4 sm:right-4 bg-red-500 text-white text-[10px] sm:text-xs font-semibold px-2 sm:px-3 py-1 rounded-md shadow-md z-20 max-w-[70%] sm:max-w-none text-center">
         Limited time offer!
       </div>

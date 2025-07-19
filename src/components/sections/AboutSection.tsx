@@ -12,7 +12,7 @@ export default function AboutSection() {
 
 
         {/* Mission Card */}
-        <Card className="bg-white dark:bg-muted p-5">
+        <Card className="p-5">
           <h2 className="text-[#f9bc60] text-4xl font-bold">About Us</h2>
 
           <TextGenerateEffect words={words} />

@@ -25,7 +25,7 @@ Payment is only needed once everything is fully delivered and you are completely
 
 export default function MobileAppPackageCard() {
   return (
-    <Card className="relative text-left py-4 px-4 bg-white dark:bg-muted shadow-md border rounded-xl">
+    <Card className="relative text-left py-4 px-4 shadow-md border rounded-xl">
       <CardHeader className="pl-2">
         <CardTitle className="text-base">Mobile App Package – From 999 CAD</CardTitle>
       </CardHeader>
