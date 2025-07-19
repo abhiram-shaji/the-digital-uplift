@@ -9,6 +9,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 const points = [
   {
@@ -67,7 +68,9 @@ export default function WhyChooseReact() {
                 <Icon className="w-5 h-5 sm:w-6 sm:h-6 mt-1 text-[#f9bc60]" />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold">
-                    {title}
+                    <PointerHighlight>
+                      <span>{title}</span>
+                    </PointerHighlight>
                   </h3>
                   <p className="text-xs sm:text-sm text-foreground">
                     {description}
