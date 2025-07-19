@@ -16,44 +16,60 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   const wordsArray = words.split(" ");
+
   useEffect(() => {
-    animate(
-      "span",
-      {
-        opacity: 1,
-        filter: filter ? "blur(0px)" : "none",
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          animate(
+            "span",
+            {
+              opacity: 1,
+              filter: filter ? "blur(0px)" : "none",
+            },
+            {
+              duration: duration,
+              delay: stagger(0.1),
+            }
+          );
+          observer.disconnect(); // Only run once
+        }
       },
       {
-        duration: duration ? duration : .5,
-        delay: stagger(0.1),
+        threshold: 0.5, // Adjust this to trigger earlier/later
       }
     );
-  }, [animate, duration, filter, words]);
 
-  const renderWords = () => {
-    return (
-      <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className="dark:text-white opacity-0"
-              style={{
-                filter: filter ? "blur(10px)" : "none",
-              }}
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
-      </motion.div>
-    );
-  };
+    if (scope.current) {
+      observer.observe(scope.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [animate, duration, filter, words, scope]);
+
+  const renderWords = () => (
+    <motion.div ref={scope}>
+      {wordsArray.map((word, idx) => (
+        <motion.span
+          key={word + idx}
+          className="dark:text-white opacity-0"
+          style={{
+            filter: filter ? "blur(10px)" : "none",
+          }}
+        >
+          {word}{" "}
+        </motion.span>
+      ))}
+    </motion.div>
+  );
 
   return (
     <div className={cn("font-semibold", className)}>
       <div>
-        <div className=" dark:text-white text-xl leading-snug tracking-wide">
+        <div className="dark:text-white text-xl leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>
