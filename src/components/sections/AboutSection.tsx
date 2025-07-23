@@ -13,7 +13,7 @@ export default function AboutSection() {
 
         {/* Mission Card */}
         <Card className="p-5">
-          <h2 className="text-[#f9bc60] text-4xl font-bold">About Us</h2>
+          <h2 className="text-4xl font-bold">About Us</h2>
 
           {/* Founder Card */}
           <div className="p-5 flex flex-col items-center text-center gap-3">
