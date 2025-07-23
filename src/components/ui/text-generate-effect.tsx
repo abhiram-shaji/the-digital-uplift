@@ -7,7 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.25,
+  duration = 0.5,
 }: {
   words: string;
   className?: string;
@@ -30,14 +30,14 @@ export const TextGenerateEffect = ({
             },
             {
               duration: duration,
-              delay: stagger(0.1),
+              delay: stagger(0.25),
             }
           );
           observer.disconnect(); // Only run once
         }
       },
       {
-        threshold: 0.5, // Adjust this to trigger earlier/later
+        threshold: 1, // Adjust this to trigger earlier/later
       }
     );
 
@@ -67,7 +67,7 @@ export const TextGenerateEffect = ({
   );
 
   return (
-    <div className={cn("font-semibold", className)}>
+    <div className={cn("", className)}>
       <div>
         <div className="dark:text-white text-xl leading-snug tracking-wide">
           {renderWords()}
