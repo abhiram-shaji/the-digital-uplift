@@ -11,17 +11,6 @@ export const sampleworks = [
   },
 
   {
-    title: 'Conference Website',
-    description:
-      'A website for the North Island Writers Conference, featuring event registration and presenter details.',
-    logo: '/conference-website-img.png',
-    alt: 'Conference website screenshot',
-    linkText: 'Preview',
-    link: 'https://cvwsconference.web.app/',
-  },
-
-
-  {
     title: 'Northern Lights',
     description:
       'A visually appealing project built with Bootstrap, inspired by aurora borealis.',
@@ -37,29 +26,6 @@ export const sampleworks = [
     alt: 'Marine awareness retreat screenshot',
     linkText: 'Preview',
     link: 'https://abhiram-shaji.github.io/marine-awareness-retreat/',
-  },
-
-
-  {
-    title: 'Lars Tonroe Enhanced',
-    description:
-      'An updated version of original Lars Tonroe norweign designer website',
-    logo: '/lars-tonroe-img.png',
-    alt: 'Lars Tonroe website screenshot',
-    linkText: 'Preview',
-    link: 'https://abhiram-shaji.github.io/Lars-Tonroe-enhanced/',
-  },
-
-
-
-  {
-    title: 'Llama',
-    description:
-      'A Bootstrap-based project with a creative design theme.',
-    logo: '/llama-img.png',
-    alt: 'Llama bootstrap design screenshot',
-    linkText: 'Preview',
-    link: 'https://abhiram-shaji.github.io/Bootstrap_llama/',
   },
 
 
