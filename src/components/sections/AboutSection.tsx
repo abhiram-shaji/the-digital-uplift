@@ -42,7 +42,7 @@ export default function AboutSection() {
     href="https://www.worksofabhiram.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-[#f9bc60] hover:opacity-80 transition"
+    className="hover:opacity-80 transition"
     aria-label="Portfolio"
   >
     <Globe size={24} />
@@ -51,7 +51,7 @@ export default function AboutSection() {
     href="https://www.linkedin.com/in/abhiram-kace/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-[#f9bc60] hover:opacity-80 transition"
+    className="hover:opacity-80 transition"
     aria-label="LinkedIn"
   >
     <Linkedin size={24} />
