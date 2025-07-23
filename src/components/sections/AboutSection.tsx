@@ -25,7 +25,7 @@ export default function AboutSection() {
               className="rounded-full object-cover"
             />
             <h3 className="text-2xl font-semibold text-[#f9bc60]">Abhiram Shaji</h3>
-            <p className="text-white max-w-xl">
+            <p className="dark:text-white max-w-xl">
               <span className="inline-flex items-center gap-2">
                 <Briefcase size={18} />
                 Founder @ The Digital Uplift
