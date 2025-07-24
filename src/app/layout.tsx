@@ -24,11 +24,16 @@ export const metadata: Metadata = {
   title: "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
   description:
     "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff, just results.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico", // fallback for Apple devices, optional
+  },
   openGraph: {
     title:
-      "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
+      "Converting Web Design Canada | Custom React Websites starting $299 | The Digital Uplift",
     description:
-      "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff—just results.",
+      "Get an elegent custom website starting at $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff, just results.",
     url: "https://www.thedigitaluplift.ca",
     siteName: "The Digital Uplift",
     images: [
@@ -47,7 +52,7 @@ export const metadata: Metadata = {
     title:
       "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
     description:
-      "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff—just results.",
+      "Get an elegent custom website starting at $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff, just results.",
     images: [
       {
         url: "/hero-bg.png",
@@ -59,6 +64,7 @@ export const metadata: Metadata = {
     canonical: "https://www.thedigitaluplift.ca",
   },
 };
+
 
 export default function RootLayout({
   children,
