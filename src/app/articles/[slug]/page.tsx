@@ -1,20 +1,18 @@
 import { notFound } from 'next/navigation';
 import { articles } from '@/lib/data/articles';
 
-type ArticlePageProps = {
-  params: { slug: string };
-};
-
 export async function generateStaticParams() {
   return articles.map((article) => ({
     slug: article.slug,
   }));
 }
 
-export default async function ArticlePage({ params }: { params: { slug: string } }) {
-  const { slug } = await Promise.resolve(params); // ✅ avoids the error
-
-  const article = articles.find((a) => a.slug === slug);
+export default async function ArticlePage({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const article = articles.find((a) => a.slug === params.slug);
 
   if (!article) return notFound();
 
