@@ -4,7 +4,6 @@ import "./globals.css";
 
 import Script from "next/script";
 import Navbar from "@/components/ui/Navbar";
-import Hero from "@/components/sections/Hero";
 import Footer from "@/components/ui/Footer";
 import { BookingModalProvider } from "@/components/ui/BookingModalContext";
 import BookingModal from "@/components/ui/BookingModal";
