@@ -51,13 +51,20 @@ export default function MobileNav() {
             >
               Works
             </Link>
-            <Link
-              href="#about"
-              className="text-lg font-medium"
-              onClick={handleNavClick}
-            >
-              About
-            </Link>
+          <Link
+            href="#about"
+            className="text-lg font-medium"
+            onClick={handleNavClick}
+          >
+            About
+          </Link>
+          <Link
+            href="#blog"
+            className="text-lg font-medium"
+            onClick={handleNavClick}
+          >
+            Blog
+          </Link>
 
             <Button size="lg" onClick={handleBookNow} aria-label="Book Now Button Mobile">
               Book Now

@@ -5,7 +5,7 @@ import { articles } from '@/lib/data/articles';
 
 export default function ArticleTilesSection() {
   return (
-    <section className="px-2 sm:px-4">
+    <section id="blog" className="px-2 sm:px-4">
       <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">
         Blog
       </h2>
