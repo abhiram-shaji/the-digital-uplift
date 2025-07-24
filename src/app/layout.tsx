@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Converting Web Design Canada | Custom React Websites starting $299 | The Digital Uplift",
+      "Design Custom React Websites starting at $299 | The Digital Uplift Canada",
     description:
       "Get an elegent custom website starting at $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff, just results.",
     url: "https://www.thedigitaluplift.ca",
