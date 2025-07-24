@@ -14,7 +14,7 @@ export default function ArticleTilesSection() {
           <Link
             key={slug}
             href={`/articles/${slug}`}
-            className="block px-3 py-2 text-sm font-medium text-center border border-gray-300 rounded hover:bg-gray-900 transition"
+            className="block px-3 py-2 text-sm font-medium text-center border border-gray-300 rounded dark:hover:bg-gray-900 hover:bg-gray-100 transition"
           >
             {title}
           </Link>
