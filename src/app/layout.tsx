@@ -97,8 +97,7 @@ export default function RootLayout({
       >
         <BookingModalProvider>
           <Navbar />
-          <Hero />
-          <main className="flex-1 mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-screen-xl">
+          <main>
             {children}
           </main>
           <Footer />
