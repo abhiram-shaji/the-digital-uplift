@@ -3,7 +3,7 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import AboutSection from "@/components/sections/AboutSection";
 import SampleWorksSection from "@/components/sections/SampleWorksSection";
 import WhyChooseReact from "@/components/sections/WhyChooseReact";
-
+import ArticleTilesSection from "@/components/sections/ArticleTilesSection";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <SampleWorksSection />
+        <ArticleTilesSection />
         
       </main>
     </>

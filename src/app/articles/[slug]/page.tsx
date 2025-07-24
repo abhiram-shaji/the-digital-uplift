@@ -1,4 +1,3 @@
-// app/articles/[slug]/page.tsx
 import { notFound } from 'next/navigation';
 import { articles } from '@/lib/data/articles';
 
@@ -12,8 +11,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ArticlePage({ params }: ArticlePageProps) {
-  const article = articles.find((a) => a.slug === params.slug);
+export default async function ArticlePage({ params }: { params: { slug: string } }) {
+  const { slug } = await Promise.resolve(params); // ✅ avoids the error
+
+  const article = articles.find((a) => a.slug === slug);
 
   if (!article) return notFound();
 
