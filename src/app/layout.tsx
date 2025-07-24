@@ -67,7 +67,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      
       <head>
+        {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" type="image/png" />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-006TGEC1M4"
