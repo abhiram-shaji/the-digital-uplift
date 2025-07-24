@@ -6,7 +6,13 @@ type PageProps = {
   params: { slug: string };
 };
 
-export default function ArticlePage({ params }: PageProps) {
+export async function generateStaticParams() {
+  return articles.map((article) => ({
+    slug: article.slug,
+  }));
+}
+
+export default async function ArticlePage({ params }: PageProps) {
   const article = articles.find((a) => a.slug === params.slug);
 
   if (!article) return notFound();
@@ -14,7 +20,7 @@ export default function ArticlePage({ params }: PageProps) {
   const Component = article.component;
 
   return (
-    <main className="min-h-screen py-16 px-6">
+    <main className="max-w-3xl mt-10 mx-auto py-12 px-4">
       <Component />
     </main>
   );
