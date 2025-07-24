@@ -7,11 +7,10 @@ export async function generateStaticParams() {
   }));
 }
 
-// ✅ Inline typing and safe usage
 export default async function ArticlePage({
   params,
 }: {
-  params: Awaited<{ slug: string }>; // Ensures params isn't treated as Promise
+  params: { slug: string };
 }) {
   const article = articles.find((a) => a.slug === params.slug);
 
