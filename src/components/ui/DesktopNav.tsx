@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import BookingModalTrigger from "@/components/ui/BookingModalTrigger"; // ✅ Import trigger
+import BookingModalTrigger from "@/components/ui/BookingModalTrigger";
 
 const navItems = [
   { label: "Services", href: "/#services" },
