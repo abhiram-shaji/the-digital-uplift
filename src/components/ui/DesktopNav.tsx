@@ -4,10 +4,10 @@ import Link from "next/link";
 import BookingModalTrigger from "@/components/ui/BookingModalTrigger"; // ✅ Import trigger
 
 const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Works", href: "#works" },
-  { label: "About", href: "#about" },
-  { label: "Blog", href: "#blog" },
+  { label: "Services", href: "/#services" },
+  { label: "Works", href: "/#works" },
+  { label: "About", href: "/#about" },
+  { label: "Blog", href: "/#blog" },
 ];
 
 export default function DesktopNav() {

@@ -38,28 +38,28 @@ export default function MobileNav() {
         >
           <div className="flex flex-col items-center gap-6 text-center">
             <Link
-              href="#services"
+              href="/#services"
               className="text-lg font-medium"
               onClick={handleNavClick}
             >
               Services
             </Link>
             <Link
-              href="#works"
+              href="/#works"
               className="text-lg font-medium"
               onClick={handleNavClick}
             >
               Works
             </Link>
           <Link
-            href="#about"
+            href="/#about"
             className="text-lg font-medium"
             onClick={handleNavClick}
           >
             About
           </Link>
           <Link
-            href="#blog"
+            href="/#blog"
             className="text-lg font-medium"
             onClick={handleNavClick}
           >
