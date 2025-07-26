@@ -124,23 +124,6 @@ const ArticleSix = () => {
         <strong>accordion web design</strong> and{" "}
         <strong>Adobe XD Webflow</strong> integration.
       </P>
-
-      <H2>Conclusion</H2>
-      <Quote>
-        “Web design is no longer just visual—it's experiential, inclusive, and strategic.”
-      </Quote>
-
-      <P>
-        From <strong>backend web developer</strong> roles to creative{" "}
-        <strong>web designer</strong> portfolios, the field is expanding faster than ever.
-        AI, 3D, and accessibility continue to reshape how we build and interact with
-        digital products.
-      </P>
-
-      <Small>
-        Whether you're designing a small business site or a global platform, the era
-        of intentional and inclusive design is here.
-      </Small>
     </div>
   );
 };
