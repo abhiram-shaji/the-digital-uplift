@@ -1,5 +1,6 @@
-"use client";
+// app/why-choose-react/page.tsx
 
+import { Metadata } from "next";
 import {
   Hammer,
   Zap,
@@ -10,6 +11,17 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
+
+export const dynamic = "force-static";
+
+export const metadata: Metadata = {
+  title: "Why Choose Us Over Wix or WordPress | The Digital Uplift",
+  description:
+    "Discover why our React-based builds outperform WordPress and Wix with unmatched performance, speed, SEO, and scalability.",
+  alternates: {
+    canonical: "https://www.thedigitaluplift.ca/why-choose-react",
+  },
+};
 
 const points = [
   {
@@ -50,12 +62,12 @@ const points = [
   },
 ];
 
-export default function WhyChooseReact() {
+export default function WhyChooseReactPage() {
   return (
     <section className="mb-12 text-center">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-8">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-8">
         Why Choose Us Over Wix or WordPress?
-      </h2>
+      </h1>
 
       <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible">
         {points.map(({ icon: Icon, title, description }, i) => (
