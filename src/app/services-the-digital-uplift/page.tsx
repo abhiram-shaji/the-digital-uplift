@@ -25,47 +25,48 @@ const services = [
   {
     title: 'Custom Website Development',
     description:
-      'We specialize in crafting fully bespoke websites designed structured and coded from scratch for optimal performance Every site features semantic accessible code that search engines love and that humans enjoy Expect responsive layouts that adapt seamlessly to desktops tablets and mobile devices while still offering pixel perfect visual fidelity and usability Performance is a cornerstone we aggressively optimize assets leverage modern image formats implement smart caching strategies and ensure critical CSS is inlined so load times stay blazing fast That is zero reliance on generic themes or cookie cutter templates every design element is uniquely tailored to reflect your brand tone colors and visual identity Beyond aesthetics our custom builds ensure future scalability modular component architecture lets your site grow as your business does whether you add new services product pages or dynamic features your site remains stable fast and easy to update',
+      'In a market where too many small businesses are sold slow, overcomplicated, or overpriced websites, we build something better. Every site we create is carefully planned, written, and coded from the ground up to be fast, accessible, and easy to use. We focus on clean, human friendly design that adapts naturally to any device, and code that search engines respect. There are no cookie cutter templates or hidden compromises, only a site that feels like it was made for you because it was. We see it as more than development; it is giving your business a foundation you can trust and grow on without unnecessary costs or technical headaches.',
     icon: <Hammer className="w-8 h-8 text-primary" />,
   },
   {
     title: 'E-Commerce Website Development',
     description:
-      'We build e-commerce platforms that perform beautifully on both elegance and efficiency Expect frictionless product browsing experiences fast loading product listings intuitive filters quick view modals and smooth pagination that keeps customers engaged Secure one page checkout flows are optimized for conversions and equipped with HTTPS payment gateway integration and built in fraud prevention hooks Inventory and order management are streamlined real time stock tracking automated alerts for low inventory and seamless syncing with fulfillment or shipping services Go to market adjustments like price changes featured product promos or seasonal campaigns are instant and straightforward Every store comes pre integrated with analytics and customer engagement systems Built from the ground up for scalability your store is prepared to handle growing traffic expanding catalogs and new product categories without compromising speed or stability',
+      'Selling online should not feel like a battle against clunky systems and high fees. We build online stores that put both you and your customers first with clear navigation, fast product browsing, and simple, secure checkouts. You will have the tools to update prices, run promotions, and track orders without being locked into complicated processes or expensive add ons. We design with care so that your store is fast, stable, and ready to grow without losing the human touch that keeps customers coming back. Every choice we make is about helping you sell more with less stress.',
     icon: <ShoppingCart className="w-8 h-8 text-primary" />,
   },
   {
     title: 'Headless CMS Integration',
     description:
-      'We seamlessly integrate your frontend with powerful headless Content Management Systems giving you a dedicated backend to manage content without slowing down your site Your team gets intuitive editing interfaces content models rich text editors media libraries while your site pulls only what it needs via fast secure APIs This decoupling boosts performance your frontend stays lean focused solely on rendering while content updates happen instantly through webhook triggered rebuilds or live preview SEO is preserved through headless friendly features metadata controls per page automated sitemap and robot directives generation and smart rendering for structured data outputs all aligned with best practices Flexibility is baked in whether you introduce new section types blog formats or microsites your content layer adapts without bloating the frontend This structure offers future proof scaling supporting multilingual content global CDN delivery role based editing workflows and content versioning all without touching the performance of your deployed site',
+      'We believe managing your content should be effortless without slowing your site down. A headless CMS gives you a clean, secure way to add, edit, and organize your content while keeping the front end lightning fast. You will be able to update pages, publish blog posts, and swap images without waiting on a developer and without risking broken layouts. We handle the technical work so you can focus on the words, images, and ideas that matter to your audience. It is about giving you control and peace of mind in a setup that will serve you for years to come.',
     icon: <LayoutDashboard className="w-8 h-8 text-primary" />,
   },
   {
     title: 'Landing Page Development',
     description:
-      'When it comes to landing pages campaign specific pages product launches or event promos we build them around conversion first principles That means minimal distractions strong visual hierarchy compelling headlines clear calls to action and persuasive copywriting designed to get your visitors to act Every landing page features aesthetical clarity fast loading visuals streamlined content flow mobile first layouts and interactive elements like anchor scrolling fixed headers or sticky CTAs to guide users seamlessly through the narrative to conversion A B testing compatibility is built in create variants with alternate headlines imagery or form placements so you can optimize engagement over time On the performance side we employ compressed assets lazy loading SVG icons and inlined CSS above the fold so even high traffic campaigns deliver consistent speed For integration we offer compatibility with email capture tools analytics tracking retargeting pixels and appointment booking widgets Everything is modular so you can spin up new pages for successive campaigns quickly and without sacrificing quality',
+      'When you need to share a message, launch a product, or promote an event, the page that carries that message should work as hard as you do. We build landing pages that speak clearly, load quickly, and guide people toward taking action without feeling pushed. The layout, visuals, and copy are all shaped around your audience so every click feels natural. We make sure these pages are easy to test, refine, and reuse so each campaign builds on the last, and you always get the most value from your investment.',
     icon: <MousePointerClick className="w-8 h-8 text-primary" />,
   },
   {
     title: 'Website Redesign and Modernization',
     description:
-      'A tired site drags your brand down That is why we offer complete redesigns fresh visuals intuitive UX and restructured information architecture to reconnect you with today users We start with UX audits performance benchmarking heatmap and user behavior analysis funnel breakdowns and competitor evaluations Design phases include moodboard style rebranding accessibility color and contrast audits prototyping in Figma or Sketch and user testing iterations Then we execute using modern maintainable tech React or similar frameworks Tailwind CSS for clean styling and best practices for semantic HTML lazy loading and responsive design Post launch you get consistent performance the site will hit one hundred percent on Lighthouse Performance SEO Best Practices and Accessibility metrics Clean code makes it easy to update whether you want to add blog posts new services or pages We provide training so you can self manage content going forward Support continues post launch so you are never left behind as your brand evolves',
+      'If your site feels outdated, you are not alone because many good businesses are held back by websites that no longer reflect who they are. We approach redesigns with respect for the work you have already put in, combining it with honest analysis of what is slowing you down. From clearer navigation to improved accessibility and faster load times, we rebuild with the goal of making your site a joy to use for both you and your visitors. This is not just about looking modern, it is about creating a site that works better for you now and will not need rescuing again anytime soon.',
     icon: <RefreshCw className="w-8 h-8 text-primary" />,
   },
   {
     title: 'Mobile App Development',
     description:
-      'Take your business mobile with custom built iOS and Android apps styled to reflect your visual identity and user experience goals We deliver intuitive native or cross platform apps with smooth onboarding flows fast launch times and offline support where needed Functional features can include real time in app booking built in messaging or customer chat loyalty or rewards systems with automated point accrual and redemption and personalised push notifications based on user behavior or calendar triggers Apps are backed by analytics tracking user sessions drop off points feature usage so you can refine experiences and drive retention We integrate securely with existing web services or APIs handle iOS App Store or Google Play deployments and provide post launch maintenance Your users benefit from an app that feels native responsive and purpose built to grow your connection with them',
+      'Your customers live on their phones, and meeting them there should feel personal, not forced. We create mobile apps that are smooth, intuitive, and built to strengthen the connection between you and the people you serve. Whether it is booking, messaging, loyalty rewards, or something unique to your business, we make sure it works reliably and feels right in your users’ hands. We handle everything from launch to updates so you are free to focus on running your business while your app quietly does its job in the background.',
     icon: <Smartphone className="w-8 h-8 text-primary" />,
   },
-]
+];
+
 
 export default function ServicesPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-20">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight text-foreground">What We Offer</h1>
-        <p className="mt-4 text-lg text-muted-foreground max-w-6xl mx-auto">
+        <p className="mt-4 text-xl text-muted-foreground max-w-6xl mx-auto">
           We specialize in building high performance scalable websites tailored to your business From fully custom web development to optimized e commerce builds we deliver fast reliable and future proof solutions with no templates and no limits
         </p>
       </div>
@@ -78,8 +79,11 @@ export default function ServicesPage() {
               <CardTitle className="text-xl">{service.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-sm whitespace-pre-line">{service.description}</p>
+              <p className="text-muted-foreground text-sm sm:text-base md:text-lg whitespace-pre-line">
+                {service.description}
+              </p>
             </CardContent>
+
           </Card>
         ))}
       </div>
