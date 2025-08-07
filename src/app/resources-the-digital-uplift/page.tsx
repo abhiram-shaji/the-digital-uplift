@@ -4,16 +4,8 @@ import Link from 'next/link';
 import {
   ExternalLink,
   Lightbulb,
-  BookOpenCheck,
-  CheckCircle2,
   Sparkles,
-  Users,
-  Boxes,
-  Landmark,
-  MousePointerClick,
-  HelpCircle,
   MessageSquareQuote,
-  CalendarCheck2,
   Rocket,
 } from 'lucide-react';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
@@ -31,64 +23,19 @@ export const metadata: Metadata = {
 
 const pages = [
   {
-    title: 'High-Impact Digital Services to Grow Your Business',
-    href: '/high-impact-digital-services-to-grow-your-business',
-    icon: <Rocket className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'Trusted by Clients for Proven Results',
-    href: '/trusted-by-clients-for-proven-results',
-    icon: <CheckCircle2 className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'Top Reasons to Choose Our Digital Services',
-    href: '/top-reasons-to-choose-our-digital-services',
-    icon: <Sparkles className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'About Our Team and Why We Do What We Do',
-    href: '/about-our-team-and-why-we-do-what-we-do',
-    icon: <Users className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'Our Digital Service Packages and Solutions',
-    href: '/our-digital-service-packages-and-solutions',
-    icon: <Boxes className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'Client Success Stories and Case Studies',
-    href: '/client-success-stories-and-case-studies',
-    icon: <BookOpenCheck className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'Free Guide to Boost Your Online Presence',
-    href: '/free-guide-to-boost-your-online-presence',
-    icon: <Landmark className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'How Our Process Delivers Consistent Results',
-    href: '/how-our-process-delivers-consistent-results',
-    icon: <MousePointerClick className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'Frequently Asked Questions About Our Services',
-    href: '/frequently-asked-questions-about-our-services',
-    icon: <HelpCircle className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: 'Real Client Feedback and Community Proof',
-    href: '/real-client-feedback-and-community-proof',
+    title: 'Real Client Success with Custom Optimized Web Builds',
+    href: '/real-client-success-with-custom-optimized-web-builds',
     icon: <MessageSquareQuote className="w-6 h-6 text-primary" />,
   },
   {
-    title: 'Book Your Free Strategy Session Now',
-    href: '/book-your-free-strategy-session-now',
-    icon: <CalendarCheck2 className="w-6 h-6 text-primary" />,
+    title: 'Blazing Fast Websites that Outperform WordPress and Wix',
+    href: '/blazing-fast-websites-that-outperform-wordpress-and-wix',
+    icon: <Sparkles className="w-6 h-6 text-primary" />,
   },
   {
-    title: 'Ready to Grow Your Business? Start Here',
-    href: '/ready-to-grow-your-business-start-here',
-    icon: <Lightbulb className="w-6 h-6 text-primary" />,
+    title: 'Everything You Need to Know About High Performance Sites',
+    href: '/everything-you-need-to-know-about-high-performance-sites',
+    icon: <Rocket className="w-6 h-6 text-primary" />,
   },
 ];
 
@@ -107,7 +54,12 @@ export default function HelpfulResourcesPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           {pages.map(({ title, href, icon }) => (
-            <Link key={href} href={href} aria-label={`Go to ${title}`} className="hover:bg-muted/30 transition-colors rounded-lg">
+            <Link
+              key={href}
+              href={href}
+              aria-label={`Go to ${title}`}
+              className="hover:bg-muted/30 transition-colors rounded-lg"
+            >
               <Card className="h-full">
                 <CardHeader className="flex flex-row items-center gap-4 cursor-pointer group">
                   {icon}
