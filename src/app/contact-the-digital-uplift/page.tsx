@@ -1,5 +1,6 @@
 // app/contact-the-digital-uplift/page.tsx
 
+import BookingModalTrigger from "@/components/ui/BookingModalTrigger"
 import { Button } from "@/components/ui/button"
 import { Globe, Linkedin, Mail, MoveRight } from "lucide-react"
 import { Metadata } from "next"
@@ -108,12 +109,7 @@ export default function ContactPage() {
           If you already know what you need, or just want to move fast, we’re ready when you are.
           Tell us about your project and we’ll help you launch it with precision, speed, and care.
         </p>
-        <Button asChild variant="outline">
-          <Link href="mailto:write4abhiram@gmail.com" className="inline-flex items-center gap-2">
-            Book a Free Strategy Session
-            <MoveRight className="size-4" />
-          </Link>
-        </Button>
+        <BookingModalTrigger />
       </div>
     </div>
   )
