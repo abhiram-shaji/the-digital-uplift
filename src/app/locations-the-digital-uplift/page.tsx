@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Locations We Serve – The Digital Uplift",
     description:
       "Proudly serving businesses across Victoria BC, Canada, and all of North America. Discover if we serve your city.",
-    url: "https://thedigitaluplift.com/locations-the-digital-uplift",
+    url: "https://thedigitaluplift.ca/locations-the-digital-uplift",
     type: "website",
     locale: "en_CA",
     siteName: "The Digital Uplift",
