@@ -20,13 +20,13 @@ export default function AboutSection() {
             <TextGenerateEffect words={words} />
             <p className="text-sm text-muted-foreground italic">
               <a
-                href="https://www.pexels.com/photo/14778868/"
+                href="https://www.pexels.com/photo/facade-of-a-parliament-building-in-british-columbia-4157284/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="https://www.pexels.com/photo/14778868/"
+                title="https://www.pexels.com/photo/facade-of-a-parliament-building-in-british-columbia-4157284/"
                 className="underline"
               >
-                Photo by Alex Ohan on Pexels
+                Photo by Keelan Clemens from Pexels
               </a>
             </p>
             <Link href="/about-the-digital-uplift">
