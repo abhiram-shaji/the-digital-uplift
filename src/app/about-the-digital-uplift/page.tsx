@@ -1,5 +1,41 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About – The Digital Uplift",
+  description:
+    "Explore the story, mission, and craft behind The Digital Uplift's high-performance websites for Canadian businesses.",
+  openGraph: {
+    title: "About – The Digital Uplift",
+    description:
+      "Learn how The Digital Uplift builds fast, future-ready digital experiences for Canadian businesses.",
+    url: "https://www.thedigitaluplift.ca/about-the-digital-uplift",
+    siteName: "The Digital Uplift",
+    images: [
+      {
+        url: "/hero-bg.png",
+        width: 1200,
+        height: 630,
+        alt: "High-performance web design for Canadian businesses",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About – The Digital Uplift",
+    description:
+      "Get to know our mission and approach to crafting ultra-fast, accessible websites.",
+    images: [
+      {
+        url: "/hero-bg.png",
+        alt: "High-performance web design for Canadian businesses",
+      },
+    ],
+  },
+};
 
 const sections = [
   {
