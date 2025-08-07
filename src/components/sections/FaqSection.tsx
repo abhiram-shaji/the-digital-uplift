@@ -7,7 +7,7 @@ import { Button } from "../ui/button"
 
 export function FaqSection() {
   return (
-    <section className="w-full px-4 py-8 bg-background">
+    <section id="faq" className="w-full px-4 py-8 bg-background">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl text-center font-bold mb-8">Frequently Asked Questions</h2>
 
