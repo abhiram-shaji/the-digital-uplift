@@ -52,7 +52,7 @@ export default function PricingPage() {
           Hourly Rate (Baseline)
         </h2>
         <p className="text-muted-foreground text-lg">
-          Our standard rate is based on the average hourly pay for a React Developer in British Columbia, which is approximately <strong>fifty-three dollars and forty-five cents per hour</strong>. This gives you a transparent starting point for budgeting your project. <br />
+          Our standard rate is based on the average hourly pay for a React Developer in British Columbia, which is approximately <strong>52$ per hour</strong>. This gives you a transparent starting point for budgeting your project. <br />
           <span className="text-sm text-muted-foreground">(Source: ziprecruiter.com)</span>
         </p>
       </div>
