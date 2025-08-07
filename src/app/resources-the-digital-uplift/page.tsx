@@ -7,6 +7,9 @@ import {
   Sparkles,
   MessageSquareQuote,
   Rocket,
+  Boxes,
+  Zap,
+  GaugeCircle,
 } from 'lucide-react';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -36,6 +39,21 @@ const pages = [
     title: 'Everything You Need to Know About High Performance Sites',
     href: '/everything-you-need-to-know-about-high-performance-sites',
     icon: <Rocket className="w-6 h-6 text-primary" />,
+  },
+  {
+    title: 'How We Build Ultra-Fast Scalable Sites in Record Time',
+    href: '/how-we-build-ultra-fast-scalable-sites-in-record-time',
+    icon: <Boxes className="w-6 h-6 text-primary" />,
+  },
+  {
+    title: 'Ready for a Website that Leaves Competitors in the Dust?',
+    href: '/ready-for-a-website-that-leaves-competitors-in-the-dust',
+    icon: <Zap className="w-6 h-6 text-primary" />,
+  },
+  {
+    title: 'Why Lighthouse Scores and High Performance Matter',
+    href: '/why-lighthouse-scores-and-high-performance-matter',
+    icon: <GaugeCircle className="w-6 h-6 text-primary" />,
   },
 ];
 
