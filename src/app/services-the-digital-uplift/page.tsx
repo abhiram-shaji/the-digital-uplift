@@ -10,6 +10,7 @@ import {
   Rocket,
 } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import BookingModalTrigger from '@/components/ui/BookingModalTrigger';
 
 export const dynamic = 'force-static';
 
@@ -90,10 +91,11 @@ export default function ServicesPage() {
       <div className="text-center mt-16">
         <Rocket className="mx-auto mb-4 w-8 h-8 text-primary" />
         <h2 className="text-2xl font-semibold">Explore Our Services</h2>
-        <p className="mt-2 text-muted-foreground max-w-xl mx-auto">
+        <p className="my-4 text-muted-foreground max-w-xl mx-auto">
           No matter the stage or size of your business, we are ready to help you grow with powerful digital tools.
           Reach out today to discuss how we can bring your vision to life.
         </p>
+        <BookingModalTrigger />
       </div>
     </div>
   );
