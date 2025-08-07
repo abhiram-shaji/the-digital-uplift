@@ -1,52 +1,19 @@
-"use client"
-
 import * as React from "react"
-import { motion, HTMLMotionProps } from "framer-motion"
+
 import { cn } from "@/lib/utils"
 
-export default function Card({ className, ...props }: HTMLMotionProps<"div">) {
-  const [hovered, setHovered] = React.useState(false)
-
+function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <motion.div
+    <div
       data-slot="card"
-      onHoverStart={() => setHovered(true)}
-      onHoverEnd={() => setHovered(false)}
-      animate={{
-        boxShadow: hovered
-          ? [
-            "0 0 6px #f9bc60",
-            "0 0 16px #f9bc60",
-            "0 0 32px #f9bc60",
-            "0 0 48px #f9bc60",
-            "0 0 32px #f9bc60",
-            "0 0 16px #f9bc60",
-            "0 0 6px #f9bc60",
-          ]
-          : "0 0 0px #f9bc60",
-      }}
-      transition={
-        hovered
-          ? {
-            duration: 0.4,
-            ease: "easeInOut",
-            repeat: Infinity,
-            repeatType: "loop",
-          }
-          : {
-            duration: 0.1,
-            ease: "easeOut",
-          }
-      }
       className={cn(
-        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm transition-all",
+        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
         className
       )}
       {...props}
     />
   )
 }
-
 
 function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
