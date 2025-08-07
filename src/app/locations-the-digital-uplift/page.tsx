@@ -51,7 +51,7 @@ export default function LocationsPage() {
 
       <h1 className="text-4xl font-bold mb-6">Locations We Serve</h1>
       <p className="text-lg mb-10 text-muted-foreground">
-        The Digital Uplift proudly serves clients across <strong>Canada</strong> and the <strong>United States</strong>. While we call Victoria, BC our home, we work with businesses and entrepreneurs across all major North American cities — fully remote, always responsive.
+        The Digital Uplift proudly serves clients across <strong>Canada</strong> and the <strong>United States</strong>. While we call Victoria, BC our home, we work with businesses and entrepreneurs across all major North American cities - fully remote, always responsive.
       </p>
 
       {/* Canada */}
