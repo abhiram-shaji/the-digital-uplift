@@ -9,7 +9,7 @@ export function FaqSection() {
   return (
     <section className="w-full px-4 py-8 bg-background">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-2xl md:text-3xl text-center font-bold mb-8">Frequently Asked Questions</h2>
 
         <Accordion type="single" collapsible className="w-full space-y-4">
           <AccordionItem value="item-1">

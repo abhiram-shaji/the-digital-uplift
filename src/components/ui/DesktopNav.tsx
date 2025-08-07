@@ -7,7 +7,7 @@ const navItems = [
   { label: "Services", href: "/#services" },
   { label: "Works", href: "/#works" },
   { label: "About", href: "/#about" },
-  { label: "Blog", href: "/#blog" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export default function DesktopNav() {
