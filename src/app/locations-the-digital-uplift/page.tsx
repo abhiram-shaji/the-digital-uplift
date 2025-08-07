@@ -109,7 +109,7 @@ export default function LocationsPage() {
           Not seeing your city? We still likely serve your area.
         </p>
         <Button asChild variant="outline">
-          <Link href="/contact" className="inline-flex items-center gap-2">
+          <Link href="/contact-the-digital-uplift" className="inline-flex items-center gap-2">
             Let’s talk about your location
             <MoveRight className="size-4" />
           </Link>
