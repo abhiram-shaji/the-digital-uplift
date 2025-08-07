@@ -1,5 +1,3 @@
-"use client";
-
 import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 
@@ -25,7 +23,7 @@ export function GlowingEffectDemo() {
   area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
   icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
   title="Custom Website Development"
-  description="We build high performance scalable websites tailored to your business needs. Every site is crafted from scratch with no templates no shortcuts and no limits. Designed for speed usability and future growth our websites deliver a seamless user experience that helps convert visitors into loyal customers."
+description="We build high performance scalable websites tailored to your business needs. Every site is crafted from scratch with no templates no shortcuts and no limits. Designed for speed usability and future growth with guaranteed performance our websites deliver a seamless user experience that helps convert visitors into loyal customers."
 />
 
 <GridItem
