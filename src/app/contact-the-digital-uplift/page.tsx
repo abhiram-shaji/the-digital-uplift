@@ -105,7 +105,7 @@ export default function ContactPage() {
       <div className="text-center mt-16">
         <p className="text-lg font-medium mb-4">Ready to Start</p>
         <p className="text-muted-foreground mb-6">
-          If you already know what you need — or just want to move fast — we’re ready when you are.
+          If you already know what you need, or just want to move fast, we’re ready when you are.
           Tell us about your project and we’ll help you launch it with precision, speed, and care.
         </p>
         <Button asChild variant="outline">
