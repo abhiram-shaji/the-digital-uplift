@@ -88,7 +88,7 @@ export default function Footer() {
   const col2 = companyLinks.slice(mid);
 
   return (
-    <footer className="border-t border-border bg-background py-8 mt-12 text-sm text-muted-foreground">
+    <footer className="border-t border-border bg-background py-8 text-sm text-muted-foreground">
       <div className="w-full px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 2xl:px-48 flex flex-col gap-8">
         {/* Middle: Link Sections */}
         <div className="flex flex-col sm:flex-row sm:justify-between gap-6 sm:gap-12">
