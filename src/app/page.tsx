@@ -11,12 +11,12 @@ export default function Home() {
     <>
       <Hero /> {/* NOT wrapped in <main>, so it doesn’t inherit max-width or padding */}
       <main className="px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
-        <WhyChooseReact />
         <ServicesSection />
+        <WhyChooseReact />
         <AboutSection />
         <SampleWorksSection />
         <FaqSection />
-        
+
       </main>
     </>
   );

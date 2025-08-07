@@ -52,7 +52,7 @@ const points = [
 
 export default function WhyChooseReact() {
   return (
-    <section className="pt-12 text-center">
+    <section className="mb-12 text-center">
       <h2 className="text-2xl sm:text-3xl font-bold mb-8">
         Why Choose Us Over Wix or WordPress?
       </h2>
