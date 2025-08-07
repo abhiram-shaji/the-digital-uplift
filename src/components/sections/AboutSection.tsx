@@ -1,27 +1,34 @@
-"use client";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 const words = `Your business deserves smart tools, clean design, and the visibility to reach more customers online without overpriced agencies or middlemen.`;
 
 export default function AboutSection() {
   return (
-    <section id="about" className="bg-background">
-      <div className="mx-auto text-center space-y-12">
-
-        {/* Mission Card */}
-        <Card className="p-5">
-          <h2 className="text-4xl font-bold">About Us</h2>
-
-          <div className="dark:text-white text-xl leading-snug tracking-wide">
-            We are based in Victoria, British Columbia and our mission is to help Canadian small businesses grow with a strong digital presence. At The Digital Uplift, you work directly with the designers and developers who bring your vision to life.
+    <section id="about" className="bg-background ">
+      <div className="max-w-7xl mx-auto">
+        <Card className="p-6 md:p-10 flex flex-col md:flex-row gap-8 items-center">
+          {/* Text Left */}
+          <div className="flex-1 space-y-4">
+            <h2 className="text-2xl sm:text-3xl font-bold">About Us</h2>
+            <p className="dark:text-white text-lg text-muted-foreground leading-relaxed">
+              We are based in Victoria, British Columbia and our mission is to help Canadian small businesses grow with a strong digital presence. At The Digital Uplift, you work directly with the designers and developers who bring your vision to life.
+            </p>
+            <TextGenerateEffect words={words} />
           </div>
 
-          <TextGenerateEffect words={words} />
+          {/* Image Right */}
+          <div className="flex-1">
+            <Image
+              src="/victoria-bc.jpg" // Replace with actual image path
+              alt="Image of Victoria BC"
+              width={600}
+              height={400}
+              className="rounded-lg object-cover w-full h-auto shadow-md"
+            />
+          </div>
         </Card>
-
-
-
       </div>
     </section>
   );
