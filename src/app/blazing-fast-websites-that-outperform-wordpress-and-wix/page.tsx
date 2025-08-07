@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Separator } from '@/components/ui/separator'
-import { Rocket, Gauge, CircleCheck, ExternalLink } from 'lucide-react'
+import { Rocket, Gauge, CircleCheck } from 'lucide-react'
 
 export const dynamic = 'force-static'
 

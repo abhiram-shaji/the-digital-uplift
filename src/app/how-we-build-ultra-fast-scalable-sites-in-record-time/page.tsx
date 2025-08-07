@@ -6,7 +6,6 @@ import {
   Bolt,
   Layers,
   Component,
-  FileCode2,
   Brush,
 } from 'lucide-react'
 

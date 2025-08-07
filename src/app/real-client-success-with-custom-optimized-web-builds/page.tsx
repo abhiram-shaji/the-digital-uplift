@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Separator } from '@/components/ui/separator'
-import { Rocket, ThumbsUp, Sparkles, TrendingUp, Activity } from 'lucide-react'
+import { ThumbsUp } from 'lucide-react'
 
 export const dynamic = 'force-static'
 

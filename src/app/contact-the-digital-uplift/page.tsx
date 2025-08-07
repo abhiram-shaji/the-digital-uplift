@@ -1,8 +1,8 @@
 // app/contact-the-digital-uplift/page.tsx
 
-import { Metadata } from "next"
-import { Mail, Linkedin, User2, MoveRight, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Globe, Linkedin, Mail, MoveRight } from "lucide-react"
+import { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {

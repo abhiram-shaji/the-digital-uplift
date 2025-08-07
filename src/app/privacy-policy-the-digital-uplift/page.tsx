@@ -7,7 +7,6 @@ import {
   Globe,
   Cookie,
   Mail,
-  EyeOff,
   SearchCheck,
 } from "lucide-react";
 import {
