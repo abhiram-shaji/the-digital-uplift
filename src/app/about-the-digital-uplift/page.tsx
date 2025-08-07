@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
+import { Card } from "@/components/ui/card";
+import { Briefcase, Globe, Linkedin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About – The Digital Uplift",
@@ -136,6 +138,53 @@ export default function AboutTheDigitalUpliftPage() {
           </div>
         </div>
       ))}
+
+      {/* Founder Card at end */}
+      <Card className="p-5 space-y-6">
+
+        <div className="p-5 flex flex-col items-center text-center gap-4">
+          <Image
+            src="/abhiram.webp"
+            alt="Abhiram Shaji"
+            width={120}
+            height={120}
+            className="rounded-full object-cover"
+          />
+          <h3 className="text-2xl font-semibold">Abhiram Shaji</h3>
+
+          <div className="dark:text-white max-w-xl space-y-2">
+            <p className="inline-flex items-center gap-2">
+              <Briefcase size={18} />
+              Founder @ The Digital Uplift
+            </p>
+            <p>
+              A conversion-minded builder and product-focused founder with sharp
+              design sense, business acumen, and strong technical execution.
+            </p>
+          </div>
+
+          <div className="flex gap-6 pt-2">
+            <a
+              href="https://www.worksofabhiram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition"
+              aria-label="Portfolio"
+            >
+              <Globe size={24} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abhiram-kace/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={24} />
+            </a>
+          </div>
+        </div>
+      </Card>
     </main>
   );
 }

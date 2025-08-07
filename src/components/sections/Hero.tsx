@@ -24,7 +24,7 @@ const words = [
           <FlipWords words={words} /> Websites<br/>
           Built for Performance and Elegance
         </h1>
-        <p className="text-2xl md:text-3xl dark:text-gray-100 text-gray-700 mb-10">
+        <p className="text-2xl md:text-3xl dark:text-gray-100 text-gray-700 max-w-6xl mb-10">
           Book a free appointment now and discover how we craft blazing-fast, elegant, and scalable websites that elevate your brand and convert better.
         </p>
       </header>
