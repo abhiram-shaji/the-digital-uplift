@@ -65,9 +65,9 @@ const points = [
 export default function WhyChooseReactPage() {
   return (
     <section className="mb-12 text-center">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-8">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8">
         Why Choose Us ?
-      </h1>
+      </h2>
 
       <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible">
         {points.map(({ icon: Icon, title, description }, i) => (
