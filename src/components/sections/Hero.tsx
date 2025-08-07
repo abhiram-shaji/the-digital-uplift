@@ -1,4 +1,4 @@
-"use client";
+export const dynamic = 'force-static';
 
 import { BackgroundLines } from "@/components/ui/background-lines";
 import BookingModalTrigger from "@/components/ui/BookingModalTrigger";
@@ -25,7 +25,7 @@ const words = [
           <span className="text-[#f9bc60]">$299 CAD</span>
         </h1>
         <p className="text-2xl md:text-3xl dark:text-gray-100 text-gray-700 mb-10">
-          Limited time launch offer! Book a free appointment now!
+        Book a free appointment now!
         </p>
       </header>
       <BookingModalTrigger />
