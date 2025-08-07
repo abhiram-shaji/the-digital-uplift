@@ -44,7 +44,7 @@ export default function ServicesSection() {
       </div>
 
       <div className="mt-10 text-center">
-        <Link href="/services">
+        <Link href="/services-the-digital-uplift">
           <Button variant="default" size="lg">
             Explore Our Services <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
