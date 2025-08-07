@@ -18,6 +18,17 @@ export default function AboutSection() {
               We are based in Victoria, British Columbia and our mission is to help Canadian small businesses grow with a strong digital presence. At The Digital Uplift, you work directly with the designers and developers who bring your vision to life.
             </p>
             <TextGenerateEffect words={words} />
+            <p className="text-sm text-muted-foreground italic">
+              <a
+                href="https://www.pexels.com/photo/14778868/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="https://www.pexels.com/photo/14778868/"
+                className="underline"
+              >
+                Photo by Alex Ohan on Pexels
+              </a>
+            </p>
             <Link href="/about-the-digital-uplift">
               <Button className="mt-4">Read More</Button>
             </Link>
