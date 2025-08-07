@@ -50,7 +50,7 @@ export function FaqSection() {
 
 <div className="mt-10 text-center">
   <Button variant="outline" asChild>
-    <Link href="/faq" className="inline-flex items-center gap-2">
+    <Link href="/faq-the-digital-uplift" className="inline-flex items-center gap-2">
       Want to see more?
       <MoveRight className="size-4" />
     </Link>
