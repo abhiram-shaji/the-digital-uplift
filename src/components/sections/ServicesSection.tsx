@@ -27,7 +27,7 @@ export default function ServicesSection() {
         <p className="text-lg text-muted-foreground">
           We specialize in building high-performance, scalable websites tailored to your business.
           From fully custom web development to optimized e-commerce builds, we deliver fast,
-          reliable, and future-proof solutions — no templates, no limits.
+          reliable, and future-proof solutions, no templates, no limits.
         </p>
       </div>
 
