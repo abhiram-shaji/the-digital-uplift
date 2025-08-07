@@ -27,37 +27,37 @@ const services = [
   {
     title: 'Custom Website Development',
     description:
-      'Every business deserves a site that reflects its unique identity. We craft fully custom websites using the latest technologies, ensuring lightning-fast load times, exceptional user experience, and full control over features.',
+      'We create handcrafted websites built from the ground up with clean code, responsive layouts, and lightning-fast load times. Each build is completely tailored to your brand and goals, delivering a unique and professional online presence. No themes or templates, just clean, scalable performance.',
     icon: <Hammer className="w-8 h-8 text-primary" />,
   },
   {
     title: 'E-Commerce Website Development',
     description:
-      'Sell with speed and style. Our e-commerce builds are optimized for conversions and designed to scale. Secure checkout, product management, and analytics come built-in.',
+      'Launch a store that converts with speed and style. Our e-commerce builds feature seamless product browsing, secure checkout, inventory control, and full integration with analytics and customer engagement tools. Scalable from day one, ready to grow with your business.',
     icon: <ShoppingCart className="w-8 h-8 text-primary" />,
   },
   {
     title: 'Headless CMS Integration',
     description:
-      'Take control without sacrificing performance. We integrate modern headless CMSs that let you easily update your site while keeping it fast, secure, and SEO-friendly.',
+      'We connect your site to a modern content system that gives you full control without compromising speed or SEO. Easily manage content while keeping your frontend fast, secure, and flexible with headless CMS setups that scale as you grow.',
     icon: <LayoutDashboard className="w-8 h-8 text-primary" />,
   },
   {
     title: 'Landing Page Development',
     description:
-      'Turn clicks into customers. We build high-converting landing pages optimized for lead capture, sales, and promotions—fast, focused, and effective.',
+      'Whether launching a product or running a campaign, our landing pages are engineered for results. Clean layouts, fast performance, and strategic user flows drive signups, bookings, and conversions without distractions.',
     icon: <MousePointerClick className="w-8 h-8 text-primary" />,
   },
   {
-    title: 'Website Redesign & Modernization',
+    title: 'Website Redesign and Modernization',
     description:
-      'If your current site feels outdated or underperforms, we’ll rebuild it with a focus on performance, usability, and polished design that reflects your brand.',
+      'If your site is outdated, underperforming, or hard to update, we can rebuild it from scratch with a fresh design and modern tech stack. Better speed, better UX, and full mobile optimization come standard, helping your brand stand out online.',
     icon: <RefreshCw className="w-8 h-8 text-primary" />,
   },
   {
     title: 'Mobile App Development',
     description:
-      'Expand your reach with custom iOS and Android apps. We build apps that match your brand and include features like chat, bookings, and push notifications.',
+      'Bring your business to phones with custom apps for iOS and Android. Designed to match your brand, our apps can include bookings, chat, loyalty programs, and push notifications to keep your audience engaged wherever they go.',
     icon: <Smartphone className="w-8 h-8 text-primary" />,
   },
 ];
@@ -89,14 +89,19 @@ export default function ServicesPage() {
       </div>
 
       <div className="text-center mt-16">
-        <Rocket className="mx-auto mb-4 w-8 h-8 text-primary" />
-        <h2 className="text-2xl font-semibold">Explore Our Services</h2>
-        <p className="my-4 text-muted-foreground max-w-xl mx-auto">
-          No matter the stage or size of your business, we are ready to help you grow with powerful digital tools.
-          Reach out today to discuss how we can bring your vision to life.
-        </p>
-        <BookingModalTrigger />
-      </div>
+  <Card className="mx-auto">
+    <CardHeader>
+      <CardTitle className="text-2xl">Ready to Get Started?</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <p className="mb-6 text-muted-foreground text-sm">
+        Let us help you build something powerful. Whether you need a new website, mobile app, or a full redesign, we are ready to bring your vision to life. Book a free consultation today.
+      </p>
+      <BookingModalTrigger />
+    </CardContent>
+  </Card>
+</div>
+
     </div>
   );
 }
