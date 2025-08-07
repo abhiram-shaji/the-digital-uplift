@@ -3,6 +3,7 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import AboutSection from "@/components/sections/AboutSection";
 import SampleWorksSection from "@/components/sections/SampleWorksSection";
 import WhyChooseReact from "@/components/sections/WhyChooseReact";
+import { FaqSection } from "@/components/sections/FaqSection";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <SampleWorksSection />
+        <FaqSection />
         
       </main>
     </>
