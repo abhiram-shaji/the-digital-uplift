@@ -1,7 +1,7 @@
 // app/refund-policy-the-digital-uplift/page.tsx
 
 import { Metadata } from "next"
-import { FileText, Handshake, Mail } from "lucide-react"
+import { Handshake, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
