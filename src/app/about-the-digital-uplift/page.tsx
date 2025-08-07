@@ -10,14 +10,19 @@ import {
   FileTextIcon,
   RefreshCcwIcon,
   ArrowRightIcon,
+  Briefcase,
+  Globe,
+  Linkedin
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <section className="bg-background text-foreground px-6 md:px-10 lg:px-20 py-20 max-w-7xl mx-auto space-y-24">
+    <section className="bg-background text-foreground px-6 md:px-10 lg:px-20 py-10 mt-20 max-w-7xl mx-auto space-y-24">
       <div className="space-y-6 text-center">
         <h1 className="text-5xl font-bold tracking-tight">
           We Don’t Build Websites. We Build Engines.
@@ -48,75 +53,93 @@ export default function AboutPage() {
       <div className="space-y-8">
         <h2 className="text-2xl font-semibold text-center">What We Stand For</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="flex flex-col items-center text-center gap-2">
-            <TimerIcon className="w-6 h-6 text-primary" />
-            <h3 className="font-medium">Speed Comes First</h3>
-            <p className="text-sm text-muted-foreground">
+          <Card className="text-center">
+            <CardHeader className="flex flex-col items-center gap-2">
+              <TimerIcon className="w-6 h-6 text-primary" />
+              <CardTitle className="text-base font-medium">Speed Comes First</CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
               From page load times to project delivery, we move fast and build even faster.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center gap-2">
-            <TrendingUpIcon className="w-6 h-6 text-primary" />
-            <h3 className="font-medium">Built for Growth</h3>
-            <p className="text-sm text-muted-foreground">
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardHeader className="flex flex-col items-center gap-2">
+              <TrendingUpIcon className="w-6 h-6 text-primary" />
+              <CardTitle className="text-base font-medium">Built for Growth</CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
               Every build is structured to scale with your business. You won’t need a redesign in 6 months.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center gap-2">
-            <ZapIcon className="w-6 h-6 text-primary" />
-            <h3 className="font-medium">No Bloat Allowed</h3>
-            <p className="text-sm text-muted-foreground">
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardHeader className="flex flex-col items-center gap-2">
+              <ZapIcon className="w-6 h-6 text-primary" />
+              <CardTitle className="text-base font-medium">No Bloat Allowed</CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
               We avoid plugins, templates, and dependencies. Every line of code is intentional.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center gap-2">
-            <Code2Icon className="w-6 h-6 text-primary" />
-            <h3 className="font-medium">Performance-Driven</h3>
-            <p className="text-sm text-muted-foreground">
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardHeader className="flex flex-col items-center gap-2">
+              <Code2Icon className="w-6 h-6 text-primary" />
+              <CardTitle className="text-base font-medium">Performance-Driven</CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
               We build based on performance, usability, and long-term maintainability.
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      <div className="p-5 max-w-md mx-auto">
+        <Card className="text-center">
+          <CardHeader className="flex flex-col items-center gap-3">
+            <Image
+              src="/abhiram.webp"
+              alt="Abhiram Shaji"
+              width={120}
+              height={120}
+              className="rounded-full object-cover"
+            />
+            <CardTitle className="text-2xl font-semibold">Abhiram Shaji</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            <p className="text-sm text-muted-foreground">
+              <span className="inline-flex items-center gap-2">
+                <Briefcase size={16} /> Founder @ The Digital Uplift
+              </span>
+              <br />
+              <span>
+                A conversion-minded builder and product-focused founder with sharp design sense,
+                business acumen, and strong technical execution.
+              </span>
             </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="space-y-6">
-        <h2 className="text-2xl font-semibold text-center">What We Do</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-muted-foreground">
-          <div className="flex items-center gap-3">
-            <Code2Icon className="w-5 h-5 text-primary" />
-            <span>Custom Website Development</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <ShoppingCartIcon className="w-5 h-5 text-primary" />
-            <span>E-Commerce Website Development</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <SmartphoneIcon className="w-5 h-5 text-primary" />
-            <span>Mobile App Development</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <LayoutTemplateIcon className="w-5 h-5 text-primary" />
-            <span>Headless CMS Integration</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <FileTextIcon className="w-5 h-5 text-primary" />
-            <span>Landing Page Development</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <RefreshCcwIcon className="w-5 h-5 text-primary" />
-            <span>Website Redesign & Modernization</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="space-y-6">
-        <h2 className="text-2xl font-semibold text-center">Our Process</h2>
-        <div className="space-y-4 max-w-3xl mx-auto text-muted-foreground">
-          <p><strong>Step One – Strategy and Planning:</strong> We work with you to define the scope and goals clearly.</p>
-          <p><strong>Step Two – Design and Structure:</strong> We plan clean, scalable architecture with thoughtful design.</p>
-          <p><strong>Step Three – Build and Optimize:</strong> We develop your product with speed, precision, and performance in mind.</p>
-          <p><strong>Step Four – Launch and Support:</strong> We deploy efficiently and remain available for ongoing support and growth.</p>
-        </div>
+            <div className="flex justify-center gap-6 pt-2">
+              <a
+                href="https://www.worksofabhiram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition"
+                aria-label="Portfolio"
+              >
+                <Globe size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/abhiram-kace/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={24} />
+              </a>
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       <Separator className="my-10" />
