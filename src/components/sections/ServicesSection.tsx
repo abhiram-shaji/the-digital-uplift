@@ -14,7 +14,7 @@ export default function ServicesSection() {
       <div className="mt-8 flex justify-center">
         <Button asChild className="h-12 px-8 text-base">
   <Link href="/services-the-digital-uplift">
-    Explore All Services
+    Read More
   </Link>
 </Button>
       </div>
