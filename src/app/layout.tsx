@@ -20,19 +20,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.thedigitaluplift.ca"),
-  title: "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
+  title: "Elegant High-Performance Web Design Canada | The Digital Uplift",
   description:
-    "Get a stunning custom website for just $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff, just results.",
+    "The Digital Uplift builds blazing-fast, elegant, and scalable React websites for Canadian small businesses. Optimized for SEO, conversions, and credibility.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico", // fallback for Apple devices, optional
+    apple: "/favicon.ico",
   },
   openGraph: {
-    title:
-      "Design Custom React Websites starting at $299 | The Digital Uplift Canada",
+    title: "React Websites Built for Speed and Elegance | The Digital Uplift",
     description:
-      "Get an elegent custom website starting at $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff, just results.",
+      "Launch a custom website built for speed, elegance, and scalability. The Digital Uplift empowers Canadian businesses with clean design and top-tier performance.",
     url: "https://www.thedigitaluplift.ca",
     siteName: "The Digital Uplift",
     images: [
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
         url: "/hero-bg.png",
         width: 1200,
         height: 630,
-        alt: "Affordable web design for Canadian small businesses",
+        alt: "High-performance web design for Canadian businesses",
       },
     ],
     locale: "en_CA",
@@ -48,14 +47,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Affordable Web Design Canada | Custom Websites for $299 – The Digital Uplift",
+    title: "Elegant High-Performance Web Design Canada | The Digital Uplift",
     description:
-      "Get an elegent custom website starting at $299 CAD. The Digital Uplift helps Canadian small businesses build elegant, affordable websites with no fluff, just results.",
+      "Build your brand online with a high-performance, elegantly designed React site. Scalable, SEO-optimized, and lightning fast.",
     images: [
       {
         url: "/hero-bg.png",
-        alt: "Affordable web design for Canadian small businesses",
+        alt: "High-performance web design for Canadian businesses",
       },
     ],
   },
