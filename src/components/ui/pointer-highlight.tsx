@@ -55,23 +55,32 @@ export function PointerHighlight({
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <motion.div
-            className={cn(
-              "absolute inset-0 border border-neutral-800 dark:border-neutral-200",
-              rectangleClassName,
-            )}
-            initial={{
-              width: 0,
-              height: 0,
-            }}
-            whileInView={{
-              width: dimensions.width,
-              height: dimensions.height,
-            }}
-            transition={{
-              duration: 1,
-              ease: "easeInOut",
-            }}
-          />
+  className={cn(
+    "absolute border border-neutral-800 dark:border-neutral-200",
+    rectangleClassName
+  )}
+  style={{
+    top: -6,
+    left: -6,
+  }}
+  initial={{
+    width: 0,                                   // start collapsed
+    height: dimensions.height + 12,            // full height from start
+  }}
+  whileInView={{
+    width: dimensions.width + 12,               // animate to expanded width
+    height: dimensions.height + 12,
+  }}
+  transition={{
+    duration: 1,
+    ease: "easeInOut",
+  }}
+/>
+
+
+
+
+
           <motion.div
             className="pointer-events-none absolute"
             initial={{ opacity: 0 }}

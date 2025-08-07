@@ -84,7 +84,7 @@ export default function WhyChooseReactPage() {
                       <span>{title}</span>
                     </PointerHighlight>
                   </h3>
-                  <p className="text-xs sm:text-sm text-foreground">
+                  <p className="text-xs mt-2 sm:text-sm text-foreground">
                     {description}
                   </p>
                 </div>
