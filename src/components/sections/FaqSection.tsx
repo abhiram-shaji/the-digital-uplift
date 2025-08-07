@@ -36,7 +36,7 @@ export function FaqSection() {
           <AccordionItem value="item-4">
             <AccordionTrigger>What tech stack do you use?</AccordionTrigger>
             <AccordionContent>
-              We work with modern frameworks like Next.js, React, Tailwind, and headless CMS platforms — always chosen based on what's best for your project.
+              We work with modern frameworks like Next.js, React, Tailwind, and headless CMS platforms - always chosen based on what's best for your project.
             </AccordionContent>
           </AccordionItem>
 
