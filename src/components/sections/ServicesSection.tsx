@@ -4,7 +4,7 @@ import { GlowingEffectDemo } from "./GlowingEffect";
 
 export default function ServicesSection() {
   return (
-    <section className="py-12">
+    <section id="services" className="py-12">
       <h2 className="text-2xl sm:text-3xl text-center font-bold mb-8">
         Services We Offer
       </h2>
