@@ -23,7 +23,7 @@ export default function ServicesSection() {
   return (
     <section className="py-16 px-4 md:px-10 lg:px-20 bg-background text-foreground">
       <div className="max-w-5xl mx-auto text-center space-y-6">
-        <h2 className="text-4xl font-bold tracking-tight">What We Do</h2>
+        <h2 className="text-4xl font-bold tracking-tight">What We Offer</h2>
         <p className="text-lg text-muted-foreground">
           We specialize in building high-performance, scalable websites tailored to your business.
           From fully custom web development to optimized e-commerce builds, we deliver fast,
