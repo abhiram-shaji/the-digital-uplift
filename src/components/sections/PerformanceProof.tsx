@@ -6,13 +6,13 @@ import { Gauge } from "lucide-react";
 
 export default function PerformanceProof() {
   return (
-    <section className="mx-auto max-w-6xl mt-8">
-      <div className="grid gap-10 md:grid-cols-2 items-center">
+    <section className="mx-auto max-w-6xl ">
+      <div className="grid gap-10 md:grid-cols-2 pt-8 items-center border-t border-gray-200">
         {/* Left: Story */}
         <div>
           <Badge className="mb-4">Proof Over Promises</Badge>
           <h2 className="text-2xl font-semibold md:text-3xl">
-            The Speed Test That Other Developers Avoid
+            Unmatched Speed Test Results
           </h2>
           <p className="mt-4 text-muted-foreground">
             PageSpeed Insights doesn’t lie. Achieving a perfect 100 across
