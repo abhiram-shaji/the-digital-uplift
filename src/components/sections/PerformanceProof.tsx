@@ -7,7 +7,7 @@ import { Gauge } from "lucide-react";
 export default function PerformanceProof() {
   return (
     <section className="mx-auto max-w-6xl ">
-      <div className="grid gap-10 md:grid-cols-2 pt-8 items-center border-t border-gray-200">
+      <div className="grid gap-10 md:grid-cols-2 pt-8 items-center border-t border-gray-200 px-4">
         {/* Left: Story */}
         <div>
           <Badge className="mb-4">Proof Over Promises</Badge>
