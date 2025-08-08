@@ -30,8 +30,11 @@ export default function AboutSection() {
               </a>
             </p>
             <Link href="/about-the-digital-uplift">
-              <Button>Read More</Button>
-            </Link>
+  <Button>
+    Read More About Us <span className="sr-only">The Digital Uplift</span>
+  </Button>
+</Link>
+
           </div>
 
           {/* Image Right */}
