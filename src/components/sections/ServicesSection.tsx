@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GlowingEffectDemo } from "./GlowingEffect";
+import WhyChooseReact from "./WhyChooseReact";
 
 export default function ServicesSection() {
   return (
@@ -10,11 +11,13 @@ export default function ServicesSection() {
       </h2>
 
       <GlowingEffectDemo />
+              <WhyChooseReact />
+      
 
       <div className="mt-8 flex justify-center">
         <Button asChild className="h-12 px-8">
   <Link href="/services-the-digital-uplift">
-    Read More
+    Discover More About The Services We Offer
   </Link>
 </Button>
       </div>
