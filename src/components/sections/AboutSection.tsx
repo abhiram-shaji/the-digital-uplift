@@ -8,7 +8,7 @@ const words = `Your business deserves smart tools, clean design, and the visibil
 
 export default function AboutSection() {
   return (
-    <section id="about" className="bg-background">
+    <section id="about" className="bg-background mb-12">
       <div className="max-w-7xl mx-auto">
         <Card className="p-6 md:p-10 flex flex-col md:flex-row gap-8 items-center">
           {/* Text Left */}
