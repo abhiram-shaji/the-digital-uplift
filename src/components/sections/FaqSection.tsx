@@ -8,7 +8,7 @@ import { Button } from "../ui/button"
 export function FaqSection() {
   return (
     <section id="faq" className="w-full px-4 py-8 bg-background">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto border-y border-gray-200 py-8">
         <h2 className="text-2xl md:text-3xl text-center font-bold mb-8">Frequently Asked Questions</h2>
 
         <Accordion type="single" collapsible className="w-full space-y-4">

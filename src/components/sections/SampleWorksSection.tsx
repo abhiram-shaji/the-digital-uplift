@@ -7,7 +7,7 @@ import { sampleworks } from "@/lib/data/sampleworks";
 
 export default function SampleWorksSection() {
   return (
-    <section id="works" className="py-16">
+    <section id="works" className="pb-12">
       <div className="container space-y-12">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight">
