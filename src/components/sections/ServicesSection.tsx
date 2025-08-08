@@ -12,7 +12,7 @@ export default function ServicesSection() {
       <GlowingEffectDemo />
 
       <div className="mt-8 flex justify-center">
-        <Button asChild className="h-12 px-8 text-base">
+        <Button asChild className="h-12 px-8">
   <Link href="/services-the-digital-uplift">
     Read More
   </Link>

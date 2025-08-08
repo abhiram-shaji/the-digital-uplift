@@ -30,7 +30,7 @@ export default function AboutSection() {
               </a>
             </p>
             <Link href="/about-the-digital-uplift">
-              <Button className="mt-4">Read More</Button>
+              <Button>Read More</Button>
             </Link>
           </div>
 
