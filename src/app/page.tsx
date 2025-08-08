@@ -4,6 +4,7 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import AboutSection from "@/components/sections/AboutSection";
 import SampleWorksSection from "@/components/sections/SampleWorksSection";
 import { FaqSection } from "@/components/sections/FaqSection";
+import PerformanceProof from "@/components/sections/PerformanceProof";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.thedigitaluplift.ca"),
@@ -64,6 +65,7 @@ export default function Home() {
       <Hero />
       <main className="px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
         <ServicesSection />
+        <PerformanceProof />
         <FaqSection />
         <SampleWorksSection />
         <AboutSection />
