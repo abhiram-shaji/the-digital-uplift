@@ -1,10 +1,8 @@
 // app/contact-the-digital-uplift/page.tsx
 
 import BookingModalTrigger from "@/components/ui/BookingModalTrigger"
-import { Button } from "@/components/ui/button"
-import { Globe, Linkedin, Mail, MoveRight } from "lucide-react"
+import { Globe, Linkedin, Mail } from "lucide-react"
 import { Metadata } from "next"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Contact Us – The Digital Uplift",
