@@ -105,10 +105,10 @@ export default function PricingPage() {
         <p className="text-lg font-medium mb-4">Let’s Build Something Better</p>
         <p className="text-muted-foreground mb-6">
           Ready to launch something fast, scalable, and built with precision?
-          Book a free quote or send us your project outline — we’ll take care of the rest.
+          Book a free quote or send us your project outline, we’ll take care of the rest.
         </p>
         <Button asChild variant="outline">
-          <Link href="/contact" className="inline-flex items-center gap-2">
+          <Link href="/contact-the-digital-uplift" className="inline-flex items-center gap-2">
             Get a Free Quote
             <MoveRight className="size-4" />
           </Link>
