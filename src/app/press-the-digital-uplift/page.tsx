@@ -68,7 +68,7 @@ export default function PressPage() {
         <p className="text-muted-foreground">
           For interviews, quotes, collaborations, or speaking requests, please reach out to:
         </p>
-        <p className="mt-2 text-lg font-medium">Email: <a href="mailto:press@thedigitaluplift.com" className="underline">press@thedigitaluplift.com</a></p>
+        <p className="mt-2 text-lg font-medium">Email: <a href="mailto:write4abhiram@gmail.com" className="underline">write4abhiram@gmail.com</a></p>
         <p className="text-muted-foreground text-sm">Typical response time: Within twenty-four hours</p>
       </section>
 
@@ -104,7 +104,7 @@ export default function PressPage() {
           You can download official logos, screenshots, and other press-ready visuals here.
         </p>
         <Button variant="outline" asChild>
-          <Link href="/press-kit.zip" download>
+          <Link href="https://drive.google.com/file/d/12-8buNmKPz5vvIu-TMpgntEZA_92Boiu/view?usp=sharing" download>
             Download Press Kit
           </Link>
         </Button>
@@ -128,8 +128,8 @@ export default function PressPage() {
           We are available for insight, commentary, and interviews about web development, mobile apps, and building digital products with speed and clarity.
         </p>
         <Button asChild variant="outline">
-          <Link href="mailto:press@thedigitaluplift.com" className="inline-flex items-center gap-2">
-            Contact Press Team
+          <Link href="mailto:write4abhiram@gmail.com" className="inline-flex items-center gap-2">
+            Contact Us
             <Mail className="size-4" />
           </Link>
         </Button>

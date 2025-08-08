@@ -24,9 +24,16 @@ export const metadata: Metadata = {
   description:
     "The Digital Uplift builds blazing-fast, elegant, and scalable React websites for Canadian small businesses. Optimized for SEO, conversions, and credibility.",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" }, // Fallback for legacy browsers
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "android-chrome", url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { rel: "android-chrome", url: "/android-chrome-512x512.png", sizes: "512x512" },
+    ],
   },
   openGraph: {
     title: "React Websites Built for Speed and Elegance | The Digital Uplift",
@@ -61,6 +68,8 @@ export const metadata: Metadata = {
     canonical: "https://www.thedigitaluplift.ca",
   },
 };
+
+
 
 
 export default function RootLayout({

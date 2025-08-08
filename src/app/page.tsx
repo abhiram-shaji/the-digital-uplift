@@ -7,13 +7,26 @@ import WhyChooseReact from "@/components/sections/WhyChooseReact";
 import { FaqSection } from "@/components/sections/FaqSection";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.thedigitaluplift.ca"),
   title: "Elegant High-Performance Web Design Canada | The Digital Uplift",
   description:
-    "Blazing-fast, elegantly crafted React websites for Canadian small businesses. SEO optimized, mobile responsive, and designed to convert.",
+    "Discover The Digital Uplift — your partner for blazing-fast, elegantly designed, and fully scalable React websites built for Canadian small businesses. From custom development to mobile-friendly design, SEO optimization, and clear calls to action, we craft digital experiences that load instantly, engage visitors, and drive measurable growth.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" }, // Legacy fallback
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "android-chrome", url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { rel: "android-chrome", url: "/android-chrome-512x512.png", sizes: "512x512" },
+    ],
+  },
   openGraph: {
-    title: "React Websites Built for Speed and Elegance | The Digital Uplift",
+    title: "Elegant High-Performance Web Design Canada | The Digital Uplift",
     description:
-      "Build a polished, high-performance online presence. Clean design, SEO-ready code, and faster load times with The Digital Uplift.",
+      "Partner with The Digital Uplift for blazing-fast, elegantly designed, and scalable React websites tailored to Canadian small businesses. Optimized for SEO, conversions, and growth, our sites deliver speed, style, and results.",
     url: "https://www.thedigitaluplift.ca",
     siteName: "The Digital Uplift",
     images: [
@@ -31,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Elegant High-Performance Web Design Canada | The Digital Uplift",
     description:
-      "Custom React websites for Canadian small businesses. Speed, elegance, and results without the agency markup.",
+      "Blazing-fast, elegant, and scalable React websites for Canadian small businesses - designed for performance, usability, and measurable growth.",
     images: [
       {
         url: "/hero-bg.png",
@@ -39,7 +52,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://www.thedigitaluplift.ca",
+  },
 };
+
+
 
 export default function Home() {
   return (
