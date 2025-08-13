@@ -4,7 +4,9 @@ import Script from "next/script";
 
 declare global {
   interface Window {
-    botpress: any;
+    botpress?: {
+      init: (config: Record<string, unknown>) => void;
+    };
   }
 }
 
@@ -17,9 +19,9 @@ export default function BotpressWebchatScript() {
       src="https://cdn.botpress.cloud/webchat/v3.2/inject.js"
       strategy="afterInteractive"
       onLoad={() => {
-        window.botpress.init({
-          botId: BOT_ID,       // from env
-          clientId: CLIENT_ID, // from env
+        window.botpress?.init({
+          botId: BOT_ID,
+          clientId: CLIENT_ID,
           configuration: {
             botName: "SupportBot",
             botAvatar: "/android-chrome-192x192.png",
