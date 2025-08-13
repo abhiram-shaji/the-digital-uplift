@@ -108,6 +108,29 @@ export default function RootLayout({
             gtag('config', 'G-006TGEC1M4');
           `}
         </Script>
+
+        {/* Botpress Webchat */}
+        <Script
+          src="https://cdn.botpress.cloud/webchat/v3.2/inject.js"
+          strategy="afterInteractive"
+        />
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              #webchat .bpWebchat {
+                position: unset;
+                width: 100%;
+                height: 100%;
+                max-height: 100%;
+                max-width: 100%;
+              }
+
+              #webchat .bpFab {
+                display: none;
+              }
+            `,
+          }}
+        />
       </head>
       <body
         className={`min-h-screen flex flex-col bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}
@@ -120,6 +143,41 @@ export default function RootLayout({
           <Footer />
           <BookingModal />
         </BookingModalProvider>
+        <div id="webchat" style={{ width: "500px", height: "500px" }} />
+        <Script id="botpress-init" strategy="afterInteractive">
+          {`
+            window.botpress.on("webchat:ready", () => {
+              window.botpress.open();
+            });
+            window.botpress.init({
+              "botId": "26b654a9-e4a4-47df-8a68-245f0712f142",
+              "configuration": {
+                "version": "v1",
+                "botName": "Digital Uplift Assistant",
+                "botAvatar": "https://files.bpcontent.cloud/2025/08/13/04/20250813040535-V0RE6LT2.png",
+                "botDescription": "I can assist you with information about The Digital Uplift's web design services, company details, and general inquiries.",
+                "website": {
+                  "title": "Website",
+                  "link": "https://www.thedigitaluplift.ca"
+                },
+                "email": {},
+                "phone": {},
+                "termsOfService": {},
+                "privacyPolicy": {},
+                "color": "#3B82F6",
+                "variant": "solid",
+                "headerVariant": "glass",
+                "themeMode": "dark",
+                "fontFamily": "inter",
+                "radius": 3,
+                "feedbackEnabled": true,
+                "footer": "[⚡ by Botpress](https://botpress.com/?from=webchat)"
+              },
+              "clientId": "bbd2623c-885d-43ea-be09-3622056ccc0c",
+              "selector": "#webchat"
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
