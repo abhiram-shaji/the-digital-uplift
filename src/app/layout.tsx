@@ -7,6 +7,7 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import { BookingModalProvider } from "@/components/ui/BookingModalContext";
 import BookingModal from "@/components/ui/BookingModal";
+import ClientProviders from "@/components/ClientProviders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -83,23 +84,12 @@ export const metadata: Metadata = {
 
 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      
       <head>
-        {/* Favicon */}
-  <link rel="icon" href="/favicon.ico" type="image/png" />
-
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-006TGEC1M4"
-          strategy="afterInteractive"
-        />
+        <link rel="icon" href="/favicon.ico" type="image/png" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-006TGEC1M4" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -109,17 +99,16 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body
-        className={`min-h-screen flex flex-col bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}
-      >
-        <BookingModalProvider>
-          <Navbar />
-          <main>
-            {children}
-          </main>
-          <Footer />
-          <BookingModal />
-        </BookingModalProvider>
+      <body className={`min-h-screen flex flex-col bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}>
+        {/* 👇 wrap everything in ClientProviders so Botpress mounts once per page */}
+        <ClientProviders>
+          <BookingModalProvider>
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+            <BookingModal />
+          </BookingModalProvider>
+        </ClientProviders>
       </body>
     </html>
   );
