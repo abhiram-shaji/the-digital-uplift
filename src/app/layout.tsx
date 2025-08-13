@@ -24,8 +24,6 @@ export const metadata: Metadata = {
   title: "Elegant High-Performance Web Design Canada | The Digital Uplift",
   description:
     "The Digital Uplift builds blazing-fast, elegant, and scalable React websites for Canadian small businesses. Optimized for SEO, conversions, and credibility.",
-
-  // 👇 Add/replace this block
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -46,20 +44,14 @@ export const metadata: Metadata = {
       { url: "/apple-icon-180x180.png", sizes: "180x180" },
     ],
     other: [
-      // If you ship 512x512 for PWA splash/icons
       { rel: "icon", url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
     ],
   },
-
-  // PWA/manifest
   manifest: "/manifest.json",
-
-  // Windows tiles (meta tags)
   other: {
     "msapplication-TileColor": "#ffffff",
     "msapplication-TileImage": "/ms-icon-144x144.png",
   },
-
   openGraph: {
     title: "React Websites Built for Speed and Elegance | The Digital Uplift",
     description:
@@ -80,23 +72,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.thedigitaluplift.ca" },
 };
 
-
-
-
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      
       <head>
-        {/* Favicon */}
-  <link rel="icon" href="/favicon.ico" type="image/png" />
-
-        {/* Google Analytics */}
+        <link rel="icon" href="/favicon.ico" type="image/png" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-006TGEC1M4"
           strategy="afterInteractive"
@@ -115,9 +95,7 @@ export default function RootLayout({
       >
         <BookingModalProvider>
           <Navbar />
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
           <Footer />
           <BookingModal />
           <BotpressWebchat />
