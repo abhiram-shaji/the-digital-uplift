@@ -7,6 +7,7 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import { BookingModalProvider } from "@/components/ui/BookingModalContext";
 import BookingModal from "@/components/ui/BookingModal";
+import BotpressWebchat from "@/components/ui/BotpressWebchat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -119,6 +120,7 @@ export default function RootLayout({
           </main>
           <Footer />
           <BookingModal />
+          <BotpressWebchat />
         </BookingModalProvider>
       </body>
     </html>
