@@ -135,7 +135,7 @@ export default function Footer() {
 
         {/* Bottom: Copyright */}
         <div className="text-center sm:text-left">
-          © {new Date().getFullYear()} ObjectStore.ca - All rights reserved.
+          © {new Date().getFullYear()} The Digital Uplift - All rights reserved.
         </div>
       </div>
     </footer>
