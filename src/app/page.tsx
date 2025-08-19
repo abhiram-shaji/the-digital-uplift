@@ -11,18 +11,6 @@ export const metadata: Metadata = {
   title: "Elegant High-Performance Web Design Canada | The Digital Uplift",
   description:
     "Discover The Digital Uplift — your partner for blazing-fast, elegantly designed, and fully scalable React websites built for Canadian small businesses. From custom development to mobile-friendly design, SEO optimization, and clear calls to action, we craft digital experiences that load instantly, engage visitors, and drive measurable growth.",
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" }, // Legacy fallback
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-    ],
-    apple: "/apple-touch-icon.png",
-    other: [
-      { rel: "android-chrome", url: "/android-chrome-192x192.png", sizes: "192x192" },
-      { rel: "android-chrome", url: "/android-chrome-512x512.png", sizes: "512x512" },
-    ],
-  },
   openGraph: {
     title: "Elegant High-Performance Web Design Canada | The Digital Uplift",
     description:
@@ -56,8 +44,6 @@ export const metadata: Metadata = {
     canonical: "https://www.thedigitaluplift.ca",
   },
 };
-
-
 
 export default function Home() {
   return (
