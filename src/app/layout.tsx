@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`min-h-screen flex flex-col bg-background text-foreground antialiased ${geistSans.variable} ${geistMono.variable}`}
       >
-        {/* 👇 wrap everything in ClientProviders so Botpress mounts once per page */}
+        {/* wrap everything in ClientProviders so Botpress mounts once per page */}
         <ClientProviders>
           <BookingModalProvider>
             <Navbar />
@@ -86,6 +86,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
             <BookingModal />
           </BookingModalProvider>
+
+          {/* Botpress WebChat v3.2 – replace any previous bot scripts with these */}
+          <Script
+            id="botpress-webchat-inject"
+            src="https://cdn.botpress.cloud/webchat/v3.2/inject.js"
+            strategy="afterInteractive"
+          />
+          <Script
+            id="botpress-webchat-config"
+            src="https://files.bpcontent.cloud/2025/08/19/05/20250819055739-2PV219AB.js"
+            strategy="afterInteractive"
+          />
         </ClientProviders>
       </body>
     </html>
